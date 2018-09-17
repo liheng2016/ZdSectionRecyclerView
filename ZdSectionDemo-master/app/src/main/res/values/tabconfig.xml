@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_names">
+        <item>来来来</item>
+        <item>多条目</item>
+        <item>收益图</item>
+    </string-array>
+</resources>

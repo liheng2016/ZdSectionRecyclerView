@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <customview.ObservableScrollView
+        android:fillViewport="true"
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:text="我是头部，哈哈哈"
+                android:textSize="40sp" />
+            <!--内层标签Tab-->
+            <LinearLayout
+                android:id="@+id/child_content"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <LinearLayout
+                    android:id="@+id/ll_community_root"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="#000"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_tabs_tab1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_tabs_text1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingBottom="@dimen/xct_lthj_newquot_padding_medium"
+                            android:paddingTop="@dimen/xct_lthj_newquot_padding_medium"
+                            android:text="A页面"
+                            android:textColor="@color/select_font_gray_red"
+                            android:textSize="@dimen/xct_lthj_font_xmedium" />
+
+                        <View
+                            android:id="@+id/view_tabs_line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/xct_space_value_x2"
+                            android:background="@color/sight_wrong_font" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_tabs_tab2"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_tabs_text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingBottom="@dimen/xct_lthj_newquot_padding_medium"
+                            android:paddingTop="@dimen/xct_lthj_newquot_padding_medium"
+                            android:text="B页面"
+                            android:textColor="@color/select_font_gray_red"
+                            android:textSize="@dimen/xct_lthj_font_xmedium" />
+
+                        <View
+                            android:id="@+id/view_tabs_line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/xct_space_value_x2"
+                            android:background="@color/sight_wrong_font"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_tabs_tab3"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_tabs_text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingBottom="@dimen/xct_lthj_newquot_padding_medium"
+                            android:paddingTop="@dimen/xct_lthj_newquot_padding_medium"
+                            android:text="C页面"
+                            android:textColor="@color/select_font_gray_red"
+                            android:textSize="@dimen/xct_lthj_font_xmedium" />
+
+                        <View
+                            android:id="@+id/view_tabs_line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/xct_space_value_x2"
+                            android:background="@color/sight_wrong_font"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </customview.ObservableScrollView>
+
+
+    <!--外层的标签Tab-->
+    <LinearLayout
+        android:id="@+id/top_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>
+

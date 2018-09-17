@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorlayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+   >
+
+
+        <listview.view.PinnedHeaderExpandableListView
+            android:id="@+id/explistview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="0.0dip"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:drawSelectorOnTop="true"
+            android:layout_weight="1"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:groupIndicator="@null"
+            android:scrollingCache="false" />
+        <Button
+            android:text="展开"
+            android:id="@+id/bt_ex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </Button>
+    <!--</LinearLayout>-->
+</LinearLayout>
+
+
+

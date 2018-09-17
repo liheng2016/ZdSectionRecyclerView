@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_linear_profit_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/xct_space_value_x25"
+    android:layout_marginRight="@dimen/xct_space_value_x15">
+
+    <!-- ，4实际持仓收益，5已实现收益}-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/xct_space_value_x12">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/xct_space_value_x20"
+            android:layout_marginTop="@dimen/xct_space_value_x2"
+            android:src="@drawable/xct_lthj_hkt_postion_detail_arrows" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xct_space_value_x35"
+            android:background="@drawable/view_hkt_border_shadow_profit"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/xct_space_value_x10"
+                    android:text="实际持仓收益："
+                    android:textSize="@dimen/xct_space_value_x12" />
+
+
+                <TextView
+                    android:id="@+id/tv_effective_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/xct_space_value_x13" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/xct_lthj_newquot_space_zeroone"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/xct_lthj_margin_medium"
+                android:layout_marginTop="@dimen/xct_lthj_margin_medium"
+                android:background="@color/xct_lthj_color_black" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/xct_space_value_x8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/xct_space_value_x10"
+                    android:text="已实现收益："
+                    android:textSize="@dimen/xct_space_value_x12" />
+
+
+                <TextView
+                    android:id="@+id/tv_already_realized"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/xct_space_value_x13" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/xct_space_value_x15"
+        android:layout_height="@dimen/xct_space_value_x3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="@dimen/xct_space_value_x20"
+        android:layout_marginTop="@dimen/xct_space_value_x12"
+        android:background="#fff" />
+</FrameLayout>

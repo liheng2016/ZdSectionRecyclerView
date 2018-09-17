@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="view.niudong.com.demo.CoolLayoutActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Custom View"
+        android:textColor="#9f00"
+        android:textSize="28sp" />
+
+    <customview.MyArcView
+        android:id="@+id/my_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/xct_space_value_x13" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xct_space_value_x9"
+        android:layout_marginTop="@dimen/xct_space_value_x20"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <customview.CircleBackView
+                android:id="@+id/bv_position_detail_total_rate"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <customview.CircleBackView
+                android:id="@+id/bv_position_detail_today_rate"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="自定义收益红绿黑左右滑动"
+        android:textColor="#800"
+        android:textSize="14sp" />
+
+    <include layout="@layout/fragment_exch_hkt_home_normal_position" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="自选四条自选快讯"
+        android:textColor="#800"
+        android:textSize="14sp" />
+    <include layout="@layout/view_root_optional_view"/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="123px"
+        android:background="@color/colorwhite">
+        <!--
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/info_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tabIndicatorColor="@color/statusbar_blue"
+                    app:tabSelectedTextColor="@color/statusbar_blue"
+                    app:tabBackground="@color/infor_background"
+                    app:tabTextColor="@color/tab_font"
+                    app:tabMode="fixed"
+                    app:tabTextAppearance="@style/InfoTabLayoutTextStyle"
+                    android:layout_centerInParent="true">
+
+                </android.support.design.widget.TabLayout>
+        -->
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/info_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:xTabIndicatorColor="@color/statusbar_blue"
+            app:xTabIndicatorHeight="2dp"
+            app:xTabIndicatorWidth="28dp"
+            app:xTabMode="scrollable"
+            app:xTabSelectedTextColor="@color/statusbar_blue"
+            app:xTabSelectedTextSize="15sp"
+            app:xTabTextColor="@color/tab_font"
+            app:xTabTextSize="15sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividerHorizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/information_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

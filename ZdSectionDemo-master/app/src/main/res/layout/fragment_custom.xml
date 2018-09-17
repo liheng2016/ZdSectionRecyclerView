@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <customview.ColumnView
+        android:id="@+id/columnView"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        app:X_AxisName="季度"
+        app:Y_AxisName="薪资(单位: 万 )"
+        app:axisTextSize="17sp"
+        app:graphTitle="2018季度薪资图(支持点击)" />
+</RelativeLayout>

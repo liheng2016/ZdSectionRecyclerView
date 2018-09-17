@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xct_lthj_color_whitebackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--3个点-->
+    <customview.FrameImage
+        android:id="@+id/iv_xct_ptr_empty_view_loading"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/xct_lthj_margin_progress_top"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/progressbar_frame_list"
+        android:visibility="gone" />
+
+    <!--logo-->
+    <ImageView
+        android:id="@+id/iv_xct_ptr_empty_view_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/xct_lthj_margin_progress_top"
+        android:src="@drawable/xct_lthj_newquot_progress_dialog"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:visibility="visible" />
+
+    <!--提示信息-->
+    <TextView
+        android:id="@+id/tv_xct_ptr_empty_view_prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/xct_lthj_padding_medium"
+        android:textColor="@color/xct_lthj_color_gray"
+        android:textSize="@dimen/xct_lthj_font_medium" />
+</LinearLayout>

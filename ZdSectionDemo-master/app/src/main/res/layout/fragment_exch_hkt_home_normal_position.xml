@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <!--app:iconbgcolor="@color/xct_lthj_color_icon_font_blue_bg"-->
+        <customview.OptionaIInfoView
+            android:id="@+id/epv_exch_home_normal_position_a_stock"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="@dimen/xct_space_value_x5"
+            android:background="@color/xct_lthj_color_f5f9fa"
+            app:color1="red"
+            app:text2="666.6"
+            app:text3="23.0"
+            app:color3="red"
+            app:title="A股持仓" />
+
+        <customview.OptionaIInfoView
+            android:id="@+id/epv_exch_home_normal_position_new_stock"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="@dimen/xct_space_value_x8"
+            android:background="@color/xct_lthj_color_faf8f5"
+            app:color1="red"
+            app:color3="green"
+            app:text2="666.6"
+            app:text3="-23.0"
+            app:title="新股" />
+
+        <customview.OptionaIInfoView
+            android:id="@+id/epv_exch_home_normal_position_hk_stock"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="@dimen/xct_space_value_x8"
+            android:background="@color/xct_lthj_color_f5f9fa"
+            app:color1="red"
+            app:text2="666.6"
+            app:color3="gray"
+            app:text3="0.00"
+            app:title="港股持仓" />
+
+        <customview.OptionaIInfoView
+            android:id="@+id/epv_exch_home_normal_position_lend"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="@dimen/xct_space_value_x8"
+            android:background="@color/xct_lthj_color_faf8f5"
+            app:color1="red"
+            app:text2="666.6"
+            app:text3="23.0"
+            app:color3="red"
+            app:title="我要放贷" />
+
+        <customview.OptionaIInfoView
+            android:id="@+id/view_more"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="@dimen/xct_space_value_x8"
+            android:layout_marginLeft="@dimen/xct_space_value_x8"
+            android:background="@color/xct_lthj_color_f5f9fa"
+             />
+
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_two" type="id" />
+    <!-- 5.2 XctPtrListLayout 新下拉刷新RecyclerView的id -->
+    <!-- 5.2 XctPtrLayout 下拉刷新 -->
+    <item name="xct_prt_layout" type="id">false</item>
+    <!-- 5.2 XctPtrLayout 新下拉刷新 空,错误布局 -->
+    <item name="ly_ptr_error_empty" type="id">false</item>
+    <!-- 5.2 XctPtrListLayout 新下拉刷新RecyclerView的id -->
+    <item name="rv_ptr_list" type="id">false</item>
+    <item name="id_stickynavlayout_topview" type="id"/>
+    <item name="id_stickynavlayout_viewpager" type="id"/>
+    <item name="id_stickynavlayout_indicator" type="id"/>
+    <item name="id_stickynavlayout_innerscrollview" type="id"/>
+
+
+</resources>

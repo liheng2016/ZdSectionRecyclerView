@@ -1,0 +1,39 @@
+1. 问进程间通信的方式。
+https://blog.csdn.net/Tomasyb/article/details/72877958
+ 2. 问线程间通信的方式。
+https://blog.csdn.net/bfboys/article/details/52825968
+进程和线程:
+https://www.cnblogs.com/WoodJim/p/4737171.html
+
+3. 设计一个图片框架考虑哪些，什么算法  
+三级缓存，Lru 算法
+4. 性能优化都有哪些
+5. 怎么就内存溢出了
+6. 图片压缩 图片的质量归根到底是处理了哪里 
+   像素密度
+7. 单例内存泄漏的问题 
+   枚举和匿名内部类单例取代
+8 .单例模式 问我饿汉式和懒汉式的问题（我猜他不懂内部类的模式）
+9. 插件化开发和热更新是否有了解
+   https://blog.csdn.net/crazy1235/article/details/76349554
+
+10、HashMap重写hashCode 和eques 有什么作用？ 
+    https://www.cnblogs.com/happyPawpaw/p/3744971.html
+11、四种引用：强软弱虚
+12、自定义View 的onmease 测量方法使用场景
+13、服务启动的两种方式和区别；
+https://blog.csdn.net/htq__/article/details/51227869
+14、工作中的一些规范；
+15、如何检测程序中的性能；
+16、Fragment 的任务栈问题；
+17、事件冲突的处理；
+18、插件化的原理知道不；
+19、设计模式；
+20、Window 和Activity 的关系？
+21、安卓的动画 插值器  
+https://blog.csdn.net/qq_25806863/article/details/70169620
+ 
+
+吴小龙同学：
+http://wuxiaolong.me/
+

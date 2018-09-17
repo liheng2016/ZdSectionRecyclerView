@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_translucent"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <customview.DrawableTextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xct_space_value_x8"
+        android:drawableLeft="@drawable/ic_lthj_customer_service"
+        android:drawablePadding="@dimen/xct_space_value_x4"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:paddingBottom="@dimen/xct_space_value_x12"
+        android:paddingTop="@dimen/xct_space_value_x12"
+        android:text="折叠一：CoordinatorLayout+RecyclerView"
+        app:drawableHeight="@dimen/xct_space_value_x22"
+        app:drawableWidth="@dimen/xct_space_value_x22" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/xct_space_value_x8"
+        android:layout_height="@dimen/xct_space_value_x15"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/xct_space_value_x12"
+        android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+</RelativeLayout>
+

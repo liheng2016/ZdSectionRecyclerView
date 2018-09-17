@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_community_root"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+
+    android:background="@color/success_stroke_color"
+
+    android:tag="sticky"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:id="@+id/ll_tabs_tab1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tabs_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/xct_lthj_newquot_padding_medium"
+                android:paddingTop="@dimen/xct_lthj_newquot_padding_medium"
+                android:text="A页面"
+                android:textColor="@color/select_font_gray_red"
+                android:textSize="@dimen/xct_lthj_font_xmedium" />
+
+            <View
+                android:id="@+id/view_tabs_line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x2"
+                android:background="@color/sight_wrong_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tabs_tab2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tabs_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/xct_lthj_newquot_padding_medium"
+                android:paddingTop="@dimen/xct_lthj_newquot_padding_medium"
+                android:text="B页面"
+                android:textColor="@color/select_font_gray_red"
+                android:textSize="@dimen/xct_lthj_font_xmedium" />
+
+            <View
+                android:id="@+id/view_tabs_line2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x2"
+                android:background="@color/sight_wrong_font"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tabs_tab3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tabs_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/xct_lthj_newquot_padding_medium"
+                android:paddingTop="@dimen/xct_lthj_newquot_padding_medium"
+                android:text="C页面"
+                android:textColor="@color/select_font_gray_red"
+                android:textSize="@dimen/xct_lthj_font_xmedium" />
+
+            <View
+                android:id="@+id/view_tabs_line3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x2"
+                android:background="@color/sight_wrong_font"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>

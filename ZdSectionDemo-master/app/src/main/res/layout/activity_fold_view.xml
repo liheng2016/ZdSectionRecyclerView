@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv_contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:id="@+id/ll_contentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_headerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="我是头部布局"
+            android:textSize="30sp"
+            android:background="#ad29e1"
+            android:gravity="center"/>
+            <LinearLayout
+                android:id="@+id/ll_topView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/tv_topView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="我是固定的布局"
+                    android:orientation="vertical"
+                    android:background="#3be42f"
+                    android:textSize="30sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+                <!--内容 数据-->
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1500dp"
+      android:text="内容"
+      android:background="@color/colorRed"
+      />
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_fixedView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"/>
+
+</RelativeLayout>

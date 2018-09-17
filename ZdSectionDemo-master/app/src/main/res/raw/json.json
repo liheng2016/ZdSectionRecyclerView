@@ -1,0 +1,181 @@
+{
+  "allTagsList": [
+    {
+      "tagsName": "鑫财通",
+      "tagsId": "20",
+      "tagInfoList": [
+ 
+   
+        {
+          "HotelLevels": [],
+          "tagType": "5",
+          "tagName": "个股",
+          "tagId": "232",
+          "latlon": "",
+          "lat": "",
+          "lon": ""
+        }
+      ]
+    },
+    {
+      "tagsName": "鑫学堂",
+      "tagsId": "4",
+      "tagInfoList": [
+        
+       
+      
+        {
+          "HotelLevels": [],
+          "tagType": "2",
+          "tagName": "股票",
+          "tagId": "8095",
+          "latlon": "",
+          "lat": "",
+          "lon": ""
+        }
+      ]
+    },
+
+
+    {
+      "tagsName": "鑫财通",
+      "tagsId": "20",
+      "tagInfoList": [
+
+
+        {
+          "HotelLevels": [],
+          "tagType": "5",
+          "tagName": "个股",
+          "tagId": "232",
+          "latlon": "",
+          "lat": "",
+          "lon": ""
+        }
+      ]
+    },
+    {
+      "tagsName": "证券所",
+      "tagsId": "5",
+      "tagInfoList": [
+
+       
+        {
+          "HotelLevels": [],
+          "tagType": "4",
+          "tagName": "券商",
+          "tagId": "199132",
+          "latlon": "116.39213,39.93974",
+          "lat": "39.93974",
+          "lon": "116.39213"
+        }
+      ]
+    },
+    {
+      "tagsName": "Android",
+      "tagsId": "1",
+      "tagInfoList": [
+  
+        {
+          "HotelLevels": [],
+          "tagType": "4",
+          "tagName": "hello",
+          "tagId": "922347",
+          "latlon": "116.40066,39.85627",
+          "lat": "39.85627",
+          "lon": "116.40066"
+        }
+      ]
+    },
+
+    {
+      "tagsName": "鑫财通",
+      "tagsId": "20",
+      "tagInfoList": [
+
+
+        {
+          "HotelLevels": [],
+          "tagType": "5",
+          "tagName": "个股",
+          "tagId": "232",
+          "latlon": "",
+          "lat": "",
+          "lon": ""
+        }
+      ]
+    },
+    {
+      "tagsName": "IOS",
+      "tagsId": "3",
+      "tagInfoList": [
+       
+        {
+          "HotelLevels": [],
+          "tagType": "3",
+          "tagName": "hehe",
+          "tagId": "4135",
+          "latlon": "",
+          "lat": "",
+          "lon": ""
+        }
+        
+      ]
+    },
+    {
+      "tagsName": "鑫财通",
+      "tagsId": "20",
+      "tagInfoList": [
+
+
+        {
+          "HotelLevels": [],
+          "tagType": "5",
+          "tagName": "个股",
+          "tagId": "232",
+          "latlon": "",
+          "lat": "",
+          "lon": ""
+        }
+      ]
+    },
+    {
+      "tagsName": "北京",
+      "tagsId": "2",
+      "tagInfoList": [
+    
+        {
+          "tagName": "天安门东"
+        }
+      ]
+    },
+    {
+      "tagsName": "鑫财通",
+      "tagsId": "20",
+      "tagInfoList": [
+
+
+        {
+          "HotelLevels": [],
+          "tagType": "5",
+          "tagName": "个股",
+          "tagId": "232",
+          "latlon": "",
+          "lat": "",
+          "lon": ""
+        }
+      ]
+    },
+
+    {
+      "tagsName": "中国",
+      "tagsId": "9",
+      "tagInfoList": [
+       
+        {
+          "tagName": "奥体中心"
+        }
+      ]
+    }
+  ]
+}

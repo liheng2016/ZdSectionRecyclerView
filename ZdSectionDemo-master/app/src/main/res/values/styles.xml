@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#999</item>
+        <item name="colorPrimaryDark">#999</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <!--分割线-->
+    <style name="DividerHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/nomal_sex</item>
+    </style>
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及透明程度-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+
+    <style name="MyDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!--5.5 新版交易首页, 持仓区各子模块View 自定义属性-->
+    <declare-styleable name="OptionaIInfoView">
+        <attr name="title" format="string" />
+        <attr name="color1">
+            <enum name="green" value="-1" />
+            <enum name="gray" value="0" />
+            <enum name="red" value="1" />
+        </attr>
+        <attr name="text2" format="string" />
+        <attr name="text3" format="string" />
+        <attr name="color3">
+            <enum name="green" value="-1" />
+            <enum name="gray" value="0" />
+            <enum name="red" value="1" />
+        </attr>
+        <attr name="noneText" format="string" />
+    </declare-styleable>
+
+    <!--TextView可指定drawable 的大小-->
+    <declare-styleable name="DrawableTextView">
+        <attr name="android:drawableLeft" />
+        <attr name="android:drawableRight" />
+        <attr name="android:drawableTop" />
+        <attr name="android:drawableBottom" />
+        <attr name="drawableWidth" format="dimension"/>
+        <attr name="drawableHeight" format="dimension"/>
+    </declare-styleable>
+
+
+    <style name="translucent">
+        <item name="android:windowBackground">@color/infor_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="TranslucentTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

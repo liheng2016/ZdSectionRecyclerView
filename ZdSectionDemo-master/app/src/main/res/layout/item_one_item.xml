@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/xct_space_value_x15"
+    android:layout_marginRight="@dimen/xct_space_value_x15"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x45"
+        android:layout_marginTop="@dimen/xct_space_value_x8"
+        android:gravity="center|left"
+        android:textSize="@dimen/xct_space_value_x15" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/xct_space_value_x8"
+        android:layout_marginRight="@dimen/xct_space_value_x8">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/xct_space_value_x5"
+        android:paddingLeft="@dimen/xct_space_value_x10"
+        android:paddingRight="@dimen/xct_space_value_x10"
+        android:paddingTop="@dimen/xct_space_value_x5">
+
+        <customview.PointView
+
+            android:id="@+id/image_point_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <customview.PointView
+            android:id="@+id/image_point_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/xct_space_value_x6"
+            android:layout_marginRight="@dimen/xct_space_value_x6" />
+
+        <customview.PointView
+            android:id="@+id/image_point_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_amount_price"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:hint="输入价格"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/et_express_receiver_address"
+            android:paddingLeft="25px"
+            android:singleLine="true"
+            android:textColor="#9000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:hint="输入用户手机号"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/et_express_receiver_address"
+            android:paddingLeft="25px"
+            android:singleLine="true"
+            android:textColor="#9000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:text="当前测试用户id为：18811793194"
+            android:textColor="#E72929"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bt_create_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="创建订单号" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Server返回订单号为:"
+                android:textColor="#130f0f"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textColor="#E72929"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/et_input_amount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:hint="请输入价格"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/et_express_receiver_address"
+            android:paddingLeft="25px"
+            android:singleLine="true"
+            android:textColor="#9000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25px"
+            android:text="提示：该价格要与创建订单传入一致"
+            android:textColor="#E72929"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/et_pay_type"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:hint="输入支付类型  "
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/et_express_receiver_address"
+            android:paddingLeft="25px"
+            android:singleLine="true"
+            android:textColor="#9000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25px"
+            android:text="提示： 1：余额支付   2：渠道支付"
+            android:textColor="#E72929"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bt_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="调起支付" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="25px"
+            android:text="注意：变更支付金额时，先点击创建订单，再去调起支付"
+            android:textColor="#f00"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>

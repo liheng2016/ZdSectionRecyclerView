@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_custom_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="圆形带文字组合"
+            android:textColor="#f00" />
+
+        <customview.ProgressDown
+            android:id="@+id/pb_down"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+        </customview.ProgressDown>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="条形进度条文字"
+            android:textColor="#f00" />
+
+        <customview.ProgressBut
+            android:id="@+id/pb"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/progress_btn_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="圆形图片进度条"
+            android:textColor="#f00" />
+
+        <customview.AroundCircleView
+            android:id="@+id/pb_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arc_bg"
+            app:textBgColor="#cee5f5"
+            app:textColor="#f0f"
+            app:textSize="2dp" />
+    </LinearLayout>
+    <!--GirdView的一些属性：
+
+    android:numColumns="auto_fit"列数设置为自动
+    android:columnWidth="90dp"，每列的宽度，也就是Item的宽度
+    android:stretchMode="columnWidth"缩放与列宽大小同步
+    android:verticalSpacing="10dp"垂直边距-->
+
+</LinearLayout>

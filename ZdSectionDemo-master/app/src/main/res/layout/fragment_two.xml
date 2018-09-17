@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <utils.IconFontTextview
+        android:id="@+id/tv_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xct_shenshu"
+        android:textColor="#7ccabc"
+        android:textSize="30sp" />
+
+    <utils.IconFontTextview
+        android:id="@+id/tv_duo_se"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xct_space_value_x20"
+        android:text="@string/xct_zijinliushui"
+        android:textColor="#01A5E0"
+        android:textSize="30sp" />
+
+
+    <utils.IconFontTextview
+        android:id="@+id/tv_h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xct_space_value_x20"
+        android:text="@string/xct_caozuofenxi"
+        android:textColor="#b07faa"
+        android:textSize="30sp" />
+
+    <utils.IconFontTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xct_space_value_x20"
+        android:text="@string/xct_woyaofangdai"
+        android:textColor="#b07faa"
+        android:textSize="30sp" />
+</LinearLayout>

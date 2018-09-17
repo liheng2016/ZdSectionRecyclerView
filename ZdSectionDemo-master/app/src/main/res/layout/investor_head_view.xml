@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/xct_space_value_x20"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/happy" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/xct_space_value_x12"
+            android:textColor="@color/white"
+            android:text="终于等到你~~"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xct_space_value_x12"
+            android:textSize="@dimen/xct_space_value_x15"
+            android:gravity="center_vertical|left" />
+
+    </FrameLayout>
+
+</LinearLayout>

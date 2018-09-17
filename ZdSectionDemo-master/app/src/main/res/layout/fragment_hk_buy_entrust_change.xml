@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/view_hkt_border_shadow"
+    android:layout_marginLeft="@dimen/xct_space_value_x15"
+    android:layout_marginRight="@dimen/xct_space_value_x15"
+    >
+
+    <!-- ，4实际持仓收益，5已实现收益}
+    -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/xct_space_value_x50"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/xct_space_value_x18"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="实际持仓收益："
+            android:textColor="@color/xct_lthj_color_black" />
+
+
+        <TextView
+            android:id="@+id/tv_effective_income"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/xct_lthj_color_black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/xct_space_value_x8"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/xct_space_value_x50"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="已实现收益："
+            android:textColor="@color/xct_lthj_color_black" />
+
+
+        <TextView
+            android:id="@+id/tv_already_realized"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=""
+            android:paddingRight="@dimen/xct_space_value_x18"
+            android:textColor="@color/xct_lthj_color_black" />
+
+        </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/xct_space_value_x30"
+        android:layout_gravity="center"
+        android:src="@drawable/xct_hk_pop_buy_sell_status_hint"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--android:inputType="numberDecimal"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3f00"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:digits="0123456789."
+            android:gravity="center"
+            android:hint="输入委托价格"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:paddingTop="@dimen/xct_space_value_x12"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#6f00"
+            android:textSize="32px"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/xct_lthj_color_gray" />
+
+    </LinearLayout>
+
+    <!--
+     <utils.DecimalEditText
+
+         android:layout_marginTop="@dimen/xct_space_value_x20"
+            android:id="@+id/et_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#3f00"
+            android:gravity="center|left"
+            android:hint="test"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/xct_space_value_x15"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#6f00"
+            android:textSize="32px"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />-->
+
+    <!--
+        <utils.MoneyEditText
+
+            android:id="@+id/et_edit3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/xct_space_value_x10"
+            android:background="#3f00"
+            android:gravity="center|left"
+            android:hint="test"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/xct_space_value_x15"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#6f00"
+            android:textSize="32px"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/xct_space_value_x58">
+
+
+        <LinearLayout
+            android:id="@+id/ll_layourt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:background="#9f00"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_out2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#6f00"
+            android:text="防止快速点击" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xct_space_value_x108"
+        android:background="#ff0">
+
+        <TextView
+            android:id="@+id/tv_test_color"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999">
+
+        <TextView
+            android:id="@+id/tv_clkicj"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/xct_space_value_x8"
+
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/xct_space_value_x8"
+        android:text="" />i
+</LinearLayout>
+

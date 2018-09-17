@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pullrefresh.XctPtrLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrlView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/pulldown_header_arrow"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/xct_space_value_x10"
+                android:src="@drawable/pulldown_logo"
+                android:visibility="gone" />
+
+
+            <ProgressBar
+
+                android:id="@+id/pg"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/xct_lthj_newquot_margin_medium"
+                android:indeterminateDrawable="@drawable/progressbar"
+                android:padding="@dimen/xct_lthj_newquot_margin_small"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/xct_space_value_x13"
+                android:src="@drawable/kline_landscape_default"
+                android:visibility="gone" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/rl_alipay"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/ib_alipay"
+                        android:layout_width="@dimen/xct_space_value_x24"
+                        android:layout_height="@dimen/xct_space_value_x24"
+                        android:background="@drawable/xct_lthj_pay_channel"
+                        android:button="@null"
+                        android:focusable="false" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/ib_balance"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="@dimen/xct_space_value_x24"
+                        android:layout_height="@dimen/xct_space_value_x24"
+                        android:background="@drawable/xct_lthj_pay_channel"
+                        android:button="@null"
+                        android:focusable="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_web_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_input_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付输入框限制"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bt_kotlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fragment 处理返回键"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/generate_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView固定布局方式"
+                android:textAllCaps="false"
+                android:visibility="visible" />
+
+
+            <Button
+                android:id="@+id/lv_head_foot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView加头脚刷新"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView悬停头部"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/lv_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="分组ListView加头部滚动"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView　ItemD悬停"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_re_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView加头脚刷新"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView分组加头"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/radar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="五边形雷达图"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/investor_bill_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="详情页面懶加載"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/db_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据库测试"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/multi_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MultiType 列表"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/thead_pool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 线程池"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/handler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Handler"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fragment任务栈"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/fragment_vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LazyFragment+ViewPager"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/leak1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App内存泄漏那些事"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_crash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crash 奔溃测试"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Okhttp-Ping++支付"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_mvp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mvp+Retrofit+Okhttp列表"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigationbar实现主页"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_fragment_tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FragmentTabHost实现主页"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_rxjava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="封装回调Bus传消息"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bt_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Handler 联想 Search"
+                android:textAllCaps="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/bt_h5_js"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="H5和Js互调"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/bt_coollayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="部分自定义View"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/bt_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="包名得到签名"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/bt_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="线性布局写Tab切换"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+
+            <RelativeLayout
+                android:id="@+id/drop_down_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="Fragment主页实现"
+
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/rl_translucent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="折叠一：CoordinatorLayout+RecyclerView"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/rl_vue_js"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="折叠二：NestedScrollView+RecyclerView"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/rl_stickya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="折叠三：StickyNavLayout+RecyclerView"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/rl_slide_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="折叠四：替换索星ScrollView+Recycler"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xct_space_value_x1"
+                android:background="@color/xct_lthj_color_hk_divide" />
+
+            <RelativeLayout
+                android:id="@+id/mulit_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customview.DrawableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/xct_space_value_x12"
+                    android:drawableLeft="@drawable/ic_lthj_customer_service"
+                    android:drawablePadding="@dimen/xct_space_value_x4"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/xct_space_value_x12"
+                    android:paddingTop="@dimen/xct_space_value_x12"
+                    android:text="一个RecyclerView切多Tab"
+                    app:drawableHeight="@dimen/xct_space_value_x22"
+                    app:drawableWidth="@dimen/xct_space_value_x22" />
+
+                <ImageView
+                    android:layout_width="@dimen/xct_space_value_x8"
+                    android:layout_height="@dimen/xct_space_value_x15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/xct_space_value_x12"
+                    android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</pullrefresh.XctPtrLayout>

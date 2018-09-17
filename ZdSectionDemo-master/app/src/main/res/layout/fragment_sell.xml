@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lang_background">
+
+        <customview.MyIndicator
+            android:id="@+id/my_tab"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginLeft="28px"
+            android:gravity="center"
+            android:layout_marginRight="28px"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_sight_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/selector_indicator_text"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/xct_space_value_x28"
+                android:background="@drawable/tab_sight_bg"
+                android:button="@null"
+                android:textColor="@color/selector_indicator_text"
+                android:textSize="13sp" />
+
+
+
+        </customview.MyIndicator>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tb_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/xct_space_value_x20"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/xct_biaotilan_height"
+
+android:orientation="vertical"
+   >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="分级(B)基金风险等级说明"
+            android:textColor="#9000"
+            android:textSize="@dimen/xct_space_value_x16"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xct_space_value_x20"
+            android:text="风险等级综合评分"
+            android:textColor="#000"
+            android:textSize="@dimen/xct_space_value_x20"
+            android:textStyle="bold" />
+
+
+        <customview.RiskRankView
+            android:id="@+id/cutom_creditLevel"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/xct_space_value_x24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/xct_space_value_x24"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xct_space_value_x8"
+                android:text="• 系统性风险：受股市大盘涨跌影响大"
+                android:textColor="#000"
+                android:textSize="@dimen/xct_space_value_x16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xct_space_value_x8"
+                android:text="• 流动性风险：成交量小的基金买不到，卖不掉"
+                android:textColor="#000"
+                android:textSize="@dimen/xct_space_value_x16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xct_space_value_x8"
+                android:text="• 杠杆风险：分级B价格比母基金成倍下跌或上升"
+                android:textColor="#000"
+                android:textSize="@dimen/xct_space_value_x16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xct_space_value_x8"
+                android:text="• 波动幅度：单日经常出现10%左右的波动"
+                android:textColor="#000"
+                android:textSize="@dimen/xct_space_value_x16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

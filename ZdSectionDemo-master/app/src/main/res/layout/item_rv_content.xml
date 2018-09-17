@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/web_view_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <!--内容的布局-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rl_translucent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <customview.DrawableTextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xct_space_value_x8"
+            android:drawableLeft="@drawable/ic_lthj_customer_service"
+            android:drawablePadding="@dimen/xct_space_value_x4"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/xct_space_value_x12"
+            android:paddingTop="@dimen/xct_space_value_x12"
+            android:singleLine="true"
+            android:text="折叠一：CoordinatorLayout+RecyclerView"
+            app:drawableHeight="@dimen/xct_space_value_x22"
+            app:drawableWidth="@dimen/xct_space_value_x22" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="@dimen/xct_space_value_x8"
+            android:layout_height="@dimen/xct_space_value_x15"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/xct_space_value_x12"
+            android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xct_space_value_x50"
+        android:gravity="center"
+        android:paddingLeft="@dimen/xct_space_value_x10"
+        android:paddingRight="@dimen/xct_space_value_x10"
+        android:text="你可以通过输入内容--物理返回和清空--物理返回 来触发返回监听试试吧！"
+        android:textSize="@dimen/xct_space_value_x20"
+
+        />
+
+    <EditText
+        android:id="@+id/tv_test_back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/xct_space_value_x30"
+        android:background="@color/address_delete_bg"
+        android:hint="输入"
+
+        android:inputType="number"
+        android:padding="@dimen/xct_space_value_x6" />
+
+
+</LinearLayout>

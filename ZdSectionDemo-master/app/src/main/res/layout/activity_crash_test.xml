@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.niudong.com.demo.CrashTestActivity">
+
+    <Button
+        android:id="@+id/bt_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Null指针"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Button
+        android:id="@+id/bt_array_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="数组越界"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <Button
+        android:id="@+id/bt_anr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="ANR"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+
+</LinearLayout>

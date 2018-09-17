@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- fontSize -->
+    <dimen name="xct_lthj_fontSize_sixteen">16.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_eighteen">18.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_twenty">20.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_twentytwo">22.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_twentyfive">25.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_thirty">30.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_fourteen">14.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_twelve">12.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_ten">10.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_eleven">11.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_nine">9.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_tradefontsize">14.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_thirteen">13.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_seventeen">17.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_twenty_two_five">22.5dp</dimen>
+    <dimen name="xct_lthj_fontSize_fifteen">15.0dp</dimen>
+    <dimen name="xct_lthj_fontSize_forty">40.0dp</dimen>
+    <dimen name="xct_lthj_font_guide_large">18.0dp</dimen>
+    <dimen name="xct_lthj_font_guide_padding">60.0dp</dimen>
+
+<!-- space -->    
+    <dimen name="xct_lthj_space_zeroone">0.01dip</dimen>
+    <dimen name="xct_lthj_space_twozeroone">0.001dip</dimen>
+    <dimen name="xct_lthj_space_three">3.0dip</dimen>
+    <dimen name="xct_lthj_space_four">4.0dip</dimen>
+    <dimen name="xct_lthj_space_five">5.0dip</dimen>
+    <dimen name="xct_lthj_space_six">6.0dip</dimen>
+    <dimen name="xct_lthj_space_seven">7.0dip</dimen>
+    <dimen name="xct_lthj_space_eight">8.0dip</dimen>
+    <dimen name="xct_lthj_space_eleven">11.0dip</dimen>
+    <dimen name="xct_lthj_space_ten">10.0dip</dimen>
+    <dimen name="xct_lthj_space_twelve">12.0dip</dimen>
+    <dimen name="xct_lthj_space_thirteen">13.0dip</dimen>
+    <dimen name="xct_lthj_space_fourteen">14.0dip</dimen>
+    <dimen name="xct_lthj_space_thirty">30dip</dimen>
+    <dimen name="xct_lthj_space_fifteen">15.0dip</dimen>
+    <dimen name="xct_lthj_space_sixteen">16.0dip</dimen>
+    <dimen name="xct_lthj_space_nineteen">19.0dip</dimen>
+    <dimen name="xct_lthj_space_seventeen">17.0dp</dimen>
+    <dimen name="xct_lthj_space_eighteen">18.0dip</dimen>
+    <dimen name="xct_lthj_space_twenty">20.0dip</dimen>
+    <dimen name="xct_lthj_space_twenty_one">21.0dip</dimen>
+    <dimen name="xct_lthj_space_twentyeight">28.0dip</dimen>
+    <dimen name="xct_lthj_space_twentyfour">24.0dip</dimen>
+    <dimen name="xct_lthj_space_fourty">40.0dip</dimen>
+    <dimen name="xct_lthj_space_48">48.0dip</dimen>
+    <dimen name="xct_lthj_space_twentyfive">25.0dip</dimen>
+    <dimen name="xct_lthj_space_twentysix">26.0dip</dimen>
+    <dimen name="xct_lthj_space_twentytwo">22.0dip</dimen>
+    <dimen name="xct_lthj_space_zero">0dip</dimen>
+    <dimen name="xct_lthj_space_one">1.0dip</dimen>
+    <dimen name="xct_lthj_space_two">2.0dip</dimen>
+    <dimen name="xct_lthj_space_tradelist">5.0dip</dimen>
+    <dimen name="xct_lthj_space_seventynine">79.0dip</dimen>
+    <dimen name="xct_lthj_space_fifty">50.0dip</dimen>
+    <dimen name="xct_lthj_space_sixty">60.0dip</dimen>
+    <dimen name="xct_lthj_space_sixtyone">61.0dip</dimen>
+    <dimen name="xct_lthj_space_seventy">70dp</dimen>
+    <!-- padding -->
+    <dimen name="xct_lthj_padding_ssmall">2dp</dimen>
+    <dimen name="xct_lthj_padding_small">5dp</dimen>
+    <dimen name="xct_lthj_padding_eight">8dp</dimen>
+    <dimen name="xct_lthj_padding_common">8dp</dimen>
+    <dimen name="xct_lthj_padding_medium">10dp</dimen>
+    <dimen name="xct_lthj_padding_large">15dp</dimen>
+    <dimen name="xct_lthj_padding_xlarge">20dp</dimen>
+    <!-- margin -->
+    <dimen name="xct_lthj_margin_eight">8dp</dimen>
+    <dimen name="xct_lthj_margin_ssmall">3dp</dimen>
+    <dimen name="xct_lthj_margin_small">5dp</dimen>
+    <dimen name="xct_lthj_margin_smallx">7dp</dimen>
+    <dimen name="xct_lthj_margin_lsmall">8dp</dimen>
+    <dimen name="xct_lthj_margin_medium">10dp</dimen>
+    <dimen name="xct_lthj_margin_medium2">13dp</dimen>
+    <dimen name="xct_lthj_margin_xmedium">12dp</dimen>
+    <dimen name="xct_lthj_margin_large">15dp</dimen>
+    <dimen name="xct_lthj_margin_xlarge">20dp</dimen>
+    <dimen name="xct_lthj_margin_xlarge2">25dp</dimen>
+    <dimen name="xct_lthj_margin_progress_top">80dp</dimen>
+    <dimen name="xct_lthj_margin_xxlarge">28dp</dimen>
+    <dimen name="xct_lthj_margin_xxxxlarge">38dp</dimen>
+    <!-- font -->
+
+    <dimen name="xct_lthj_font_lsmall">9dip</dimen>
+    <dimen name="xct_lthj_font_small">12dp</dimen>
+    <dimen name="xct_lthj_font_medium">13dp</dimen>
+    <dimen name="xct_lthj_font_mediumx1">14dp</dimen>
+    <dimen name="xct_lthj_font_smallx">12.5dp</dimen>
+    <dimen name="xct_lthj_font_mediumx">15dp</dimen>
+    <dimen name="xct_lthj_font_mediumxx">15.5dp</dimen>
+    <dimen name="xct_lthj_font_xmedium">14dp</dimen>
+    <dimen name="xct_lthj_font_large">16dp</dimen>
+    <dimen name="xct_lthj_font_largex">17dp</dimen>
+    <dimen name="xct_lthj_font_larger">18dp</dimen>
+    <dimen name="xct_lthj_font_xlarge">20dp</dimen>
+    <dimen name="xct_lthj_font_xlarger">22dp</dimen>
+    <dimen name="xct_lthj_font_xxlarge">30dp</dimen>
+    <dimen name="xct_lthj_font_xxxlarge">32dp</dimen>
+    <dimen name="xct_lthj_font_xxxxlarge">38dp</dimen>
+    <!-- corner -->
+
+    <dimen name="xct_lthj_corner_small">5dp</dimen>
+    <dimen name="xct_lthj_corner_medium">10dp</dimen>
+    <dimen name="xct_lthj_corner_large">15dp</dimen>
+    <dimen name="xct_lthj_corner_xlarge">20dp</dimen>
+    <!-- width height -->
+
+    <dimen name="xct_lthj_wh_onedp">1dp</dimen>
+    <dimen name="xct_lthj_wh_twodp">2dp</dimen>
+    <dimen name="xct_lthj_wh_fivedp">5dp</dimen>
+    <dimen name="xct_lthj_wh_thirtydp">30dp</dimen>
+    <dimen name="xct_lthj_wh_twentydp">20dp</dimen>
+    <!-- newtrade -->
+
+    <dimen name="xct_lthj_space_newtrade_thirty">30dp</dimen>
+    <dimen name="xct_lthj_space_newtrade_twentyfive">25dp</dimen>
+    <dimen name="xct_lthj_space_newtrade_twenty">20dp</dimen>
+    <dimen name="xct_lthj_space_newtrade_fifteen">15dp</dimen>
+    <dimen name="xct_lthj_space_newtrade_eight">8dp</dimen>
+    <dimen name="xct_lthj_space_transfers_twelve">12dp</dimen>
+    <!-- begin登录页面需要切换皮肤的 dimen -->
+
+    <dimen name="xct_lthj_skin_space_zeroone">0.01dip</dimen>
+ <!-- titleRLayout -->
+    <dimen name="xct_lthj_skin_space_three">3.0dip</dimen>
+    <!-- end登录页面需要切换皮肤的dimen -->
+    <!-- 标题栏高度 -->
+    <dimen name="xct_lthj_title_height">50dip</dimen>
+    <!-- newquot dimens -->
+    <dimen name="xct_lthj_newquot_space_zero">0dip</dimen>
+    <dimen name="xct_lthj_newquot_space_two">2.0dip</dimen>
+    <dimen name="xct_lthj_newquot_space_0p5">0.5dip</dimen>
+    <dimen name="xct_lthj_newquot_space_twenty">20dip</dimen>
+    <dimen name="xct_lthj_newquot_space_three">3dip</dimen>
+    <dimen name="xct_lthj_newquot_space_five">5dip</dimen>
+    <dimen name="xct_lthj_newquot_space_ten">10dip</dimen>
+    <dimen name="xct_lthj_newquot_space_eight">8dip</dimen>
+    <dimen name="xct_lthj_newquot_space_nine">9dip</dimen>
+    <dimen name="xct_lthj_newquot_space_thirty">30dip</dimen>
+    <dimen name="xct_lthj_newquot_space_one">1dip</dimen>
+    <dimen name="xct_lthj_newquot_space_fifteen">15dip</dimen>
+    <!-- font -->
+
+    <dimen name="xct_lthj_newquot_font_lsmall">9dip</dimen>
+    <dimen name="xct_lthj_newquot_font_small">12dp</dimen>
+    <dimen name="xct_lthj_newquot_font_xsmall">13dp</dimen>
+    <dimen name="xct_lthj_newquot_font_medium">14dp</dimen>
+    <dimen name="xct_lthj_newquot_font_medium2">15dp</dimen>
+    <dimen name="xct_lthj_newquot_font_large">16dp</dimen>
+    <dimen name="xct_lthj_newquot_font_large_seventeenth">16dp</dimen>
+    <dimen name="xct_lthj_newquot_font_xlarge">20dp</dimen>
+    <dimen name="xct_lthj_newquot_font_xlarger">22dp</dimen>
+    <dimen name="xct_lthj_newquot_font_xxlarge">30dp</dimen>
+    <dimen name="xct_lthj_newquot_font_xxxlarge">40dp</dimen>
+    <dimen name="xct_lthj_newquot_fontSize_twelve">12.0dp</dimen>
+
+    <!-- padding -->
+    <dimen name="xct_lthj_newquot_padding_xsmall">2dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_msmall">3dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_small">5dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_medium">10dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_lmedium">13dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_xmedium">8dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_large">15dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_xlarge">20dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_xlarge_thirty">30dp</dimen>
+    <dimen name="xct_lthj_newquot_padding_xlarge_fourty">40dp</dimen>
+    <!-- margin -->
+    <dimen name="xct_lthj_newquot_margin_small">5dp</dimen>
+    <dimen name="xct_lthj_newquot_margin_medium">10dp</dimen>
+    <dimen name="xct_lthj_newquot_margin_xmedium">8dp</dimen>
+    <dimen name="xct_lthj_newquot_margin_large">15dp</dimen>
+    <dimen name="xct_lthj_newquot_margin_ilarge">12dp</dimen>
+    <dimen name="xct_lthj_newquot_margin_xlarge">20dp</dimen>
+
+    <!-- corner -->
+    <dimen name="xct_lthj_newquot_corner_xsmall">1dp</dimen>
+    <dimen name="xct_lthj_newquot_corner_small">3dp</dimen>
+    <dimen name="xct_lthj_newquot_corner_medium">5dp</dimen>
+    <dimen name="xct_lthj_newquot_corner_large">8dp</dimen>
+    <dimen name="xct_lthj_newquot_corner_xlarge">10dp</dimen>
+
+    <!-- QQ 传图改动 -->
+    <dimen name="xct_lthj_newquot_space_zeroone">0.50dip</dimen>
+ <!-- ps. 原0.001dip -->
+    <!-- 行情首页 -->
+    <dimen name="xct_lthj_space_fengexian_margin_left">55dip</dimen>
+
+    <!--  新版的dimen值 -->
+    <dimen name="xct_space_value_x0">0.0dp</dimen>
+<dimen name="xct_space_value_x0.1">0.1dp</dimen>
+<dimen name="xct_space_value_x0.5">0.5dp</dimen>
+<dimen name="xct_space_value_x1">1.0dp</dimen>
+<dimen name="xct_space_value_x2">2.0dp</dimen>
+<dimen name="xct_space_value_x3">3.0dp</dimen>
+<dimen name="xct_space_value_x4">4.0dp</dimen>
+<dimen name="xct_space_value_x5">5.0dp</dimen>
+<dimen name="xct_space_value_x6">6.0dp</dimen>
+<dimen name="xct_space_value_x7">7.0dp</dimen>
+<dimen name="xct_space_value_x8">8.0dp</dimen>
+<dimen name="xct_space_value_x9">9.0dp</dimen>
+<dimen name="xct_space_value_x10">10.0dp</dimen>
+<dimen name="xct_space_value_x11">11.0dp</dimen>
+<dimen name="xct_space_value_x12">12.0dp</dimen>
+<dimen name="xct_space_value_x13">13.0dp</dimen>
+<dimen name="xct_space_value_x14">14.0dp</dimen>
+<dimen name="xct_space_value_x15">15.0dp</dimen>
+<dimen name="xct_space_value_x16">16.0dp</dimen>
+<dimen name="xct_space_value_x17">17.0dp</dimen>
+<dimen name="xct_space_value_x18">18.0dp</dimen>
+<dimen name="xct_space_value_x19">19.0dp</dimen>
+<dimen name="xct_space_value_x20">20.0dp</dimen>
+<dimen name="xct_space_value_x21">21.0dp</dimen>
+<dimen name="xct_space_value_x22">22.0dp</dimen>
+<dimen name="xct_space_value_x23">23.0dp</dimen>
+<dimen name="xct_space_value_x24">24.0dp</dimen>
+<dimen name="xct_space_value_x25">25.0dp</dimen>
+<dimen name="xct_space_value_x26">26.0dp</dimen>
+<dimen name="xct_space_value_x27">27.0dp</dimen>
+<dimen name="xct_space_value_x28">28.0dp</dimen>
+<dimen name="xct_space_value_x29">29.0dp</dimen>
+<dimen name="xct_space_value_x30">30.0dp</dimen>
+<dimen name="xct_space_value_x31">31.0dp</dimen>
+<dimen name="xct_space_value_x32">32.0dp</dimen>
+<dimen name="xct_space_value_x33">33.0dp</dimen>
+<dimen name="xct_space_value_x34">34.0dp</dimen>
+<dimen name="xct_space_value_x35">35.0dp</dimen>
+<dimen name="xct_space_value_x36">36.0dp</dimen>
+<dimen name="xct_space_value_x37">37.0dp</dimen>
+<dimen name="xct_space_value_x38">38.0dp</dimen>
+<dimen name="xct_space_value_x39">39.0dp</dimen>
+<dimen name="xct_space_value_x40">40.0dp</dimen>
+<dimen name="xct_space_value_x41">41.0dp</dimen>
+<dimen name="xct_space_value_x42">42.0dp</dimen>
+<dimen name="xct_space_value_x43">43.0dp</dimen>
+<dimen name="xct_space_value_x44">44.0dp</dimen>
+<dimen name="xct_space_value_x45">45.0dp</dimen>
+<dimen name="xct_space_value_x46">46.0dp</dimen>
+<dimen name="xct_space_value_x47">47.0dp</dimen>
+<dimen name="xct_space_value_x48">48.0dp</dimen>
+<dimen name="xct_space_value_x49">49.0dp</dimen>
+<dimen name="xct_space_value_x50">50.0dp</dimen>
+<dimen name="xct_space_value_x51">51.0dp</dimen>
+<dimen name="xct_space_value_x52">52.0dp</dimen>
+<dimen name="xct_space_value_x53">53.0dp</dimen>
+<dimen name="xct_space_value_x54">54.0dp</dimen>
+<dimen name="xct_space_value_x55">55.0dp</dimen>
+<dimen name="xct_space_value_x56">56.0dp</dimen>
+<dimen name="xct_space_value_x57">57.0dp</dimen>
+<dimen name="xct_space_value_x58">58.0dp</dimen>
+<dimen name="xct_space_value_x59">59.0dp</dimen>
+<dimen name="xct_space_value_x60">60.0dp</dimen>
+<dimen name="xct_space_value_x61">61.0dp</dimen>
+<dimen name="xct_space_value_x62">62.0dp</dimen>
+<dimen name="xct_space_value_x63">63.0dp</dimen>
+<dimen name="xct_space_value_x64">64.0dp</dimen>
+<dimen name="xct_space_value_x65">65.0dp</dimen>
+<dimen name="xct_space_value_x66">66.0dp</dimen>
+<dimen name="xct_space_value_x67">67.0dp</dimen>
+<dimen name="xct_space_value_x68">68.0dp</dimen>
+<dimen name="xct_space_value_x69">69.0dp</dimen>
+<dimen name="xct_space_value_x70">70.0dp</dimen>
+<dimen name="xct_space_value_x71">71.0dp</dimen>
+<dimen name="xct_space_value_x72">72.0dp</dimen>
+<dimen name="xct_space_value_x73">73.0dp</dimen>
+<dimen name="xct_space_value_x74">74.0dp</dimen>
+<dimen name="xct_space_value_x75">75.0dp</dimen>
+<dimen name="xct_space_value_x76">76.0dp</dimen>
+<dimen name="xct_space_value_x77">77.0dp</dimen>
+<dimen name="xct_space_value_x78">78.0dp</dimen>
+<dimen name="xct_space_value_x79">79.0dp</dimen>
+<dimen name="xct_space_value_x80">80.0dp</dimen>
+<dimen name="xct_space_value_x81">81.0dp</dimen>
+<dimen name="xct_space_value_x82">82.0dp</dimen>
+<dimen name="xct_space_value_x83">83.0dp</dimen>
+<dimen name="xct_space_value_x84">84.0dp</dimen>
+<dimen name="xct_space_value_x85">85.0dp</dimen>
+<dimen name="xct_space_value_x86">86.0dp</dimen>
+<dimen name="xct_space_value_x87">87.0dp</dimen>
+<dimen name="xct_space_value_x88">88.0dp</dimen>
+<dimen name="xct_space_value_x89">89.0dp</dimen>
+<dimen name="xct_space_value_x90">90.0dp</dimen>
+<dimen name="xct_space_value_x91">91.0dp</dimen>
+<dimen name="xct_space_value_x92">92.0dp</dimen>
+<dimen name="xct_space_value_x93">93.0dp</dimen>
+<dimen name="xct_space_value_x94">94.0dp</dimen>
+<dimen name="xct_space_value_x95">95.0dp</dimen>
+<dimen name="xct_space_value_x96">96.0dp</dimen>
+<dimen name="xct_space_value_x97">97.0dp</dimen>
+<dimen name="xct_space_value_x98">98.0dp</dimen>
+<dimen name="xct_space_value_x99">99.0dp</dimen>
+<dimen name="xct_space_value_x100">100.0dp</dimen>
+<dimen name="xct_space_value_x101">101.0dp</dimen>
+<dimen name="xct_space_value_x102">102.0dp</dimen>
+<dimen name="xct_space_value_x103">103.0dp</dimen>
+<dimen name="xct_space_value_x104">104.0dp</dimen>
+<dimen name="xct_space_value_x105">105.0dp</dimen>
+<dimen name="xct_space_value_x106">106.0dp</dimen>
+<dimen name="xct_space_value_x107">107.0dp</dimen>
+<dimen name="xct_space_value_x108">108.0dp</dimen>
+<dimen name="xct_space_value_x109">109.0dp</dimen>
+<dimen name="xct_space_value_x110">110.0dp</dimen>
+<dimen name="xct_space_value_x111">111.0dp</dimen>
+<dimen name="xct_space_value_x112">112.0dp</dimen>
+<dimen name="xct_space_value_x113">113.0dp</dimen>
+<dimen name="xct_space_value_x114">114.0dp</dimen>
+<dimen name="xct_space_value_x115">115.0dp</dimen>
+<dimen name="xct_space_value_x116">116.0dp</dimen>
+<dimen name="xct_space_value_x117">117.0dp</dimen>
+<dimen name="xct_space_value_x118">118.0dp</dimen>
+<dimen name="xct_space_value_x119">119.0dp</dimen>
+<dimen name="xct_space_value_x120">120dp</dimen>
+<dimen name="xct_space_value_x125">125dp</dimen>
+<dimen name="xct_space_value_x140">140dp</dimen>
+<dimen name="xct_space_value_x180">180dp</dimen>
+<dimen name="xct_space_value_x200">200dp</dimen>
+<dimen name="xct_space_value_x220">220dp</dimen>
+<dimen name="xct_space_value_x230">230dp</dimen>
+<dimen name="xct_space_value_x280">280dp</dimen>
+<dimen name="xct_space_value_x225">225dp</dimen>
+    
+
+<!-- 基金拆合的输入框，左右的padding -->
+<dimen name="xct_space_padding_ch">5dp</dimen>
+<dimen name="xct_space_padding_abm">5dp</dimen>
+<dimen name="xct_text_size_table">14.2dp</dimen>
+<!-- 拆分合并的折现，左边距 -->
+<dimen name="xct_margin_chaihe">14dp</dimen>
+<dimen name="xct_margin_chaihe2">10dp</dimen>
+
+
+<!--     账户表现中，线条的宽度。 -->
+<dimen name="chart_Account420_line">5dp</dimen>
+<dimen name="chart_Account420_textSize">12.5dp</dimen>
+<dimen name="chart_Account420_textSize2">15dp</dimen>
+<dimen name="chart_Account420_line_marginTop">8dp</dimen>
+<dimen name="chart_Account420_line_marginRight">9dp</dimen>
+<dimen name="chart_Account420_tip_img_wh">14dp</dimen>
+
+<!-- 4.3.0详情偏移 --> 
+<dimen name="xct_stockdetail_whitebg_space">8dp</dimen>  
+<dimen name="xct_stockdetail_tabl_line_height">1dip</dimen>
+
+<!-- 4.4.0 统一项目中用到的大小距离 ................................. -->
+<!-- questionTitle 头部的标题  -->
+<dimen name="xct_title_maintile">20dip</dimen> 
+<dimen name="xct_title_subtile">9dip</dimen>
+
+<!--  表头 -->
+<dimen name="xct_table_header_font">14.2dip</dimen>
+
+<!-- 标题栏 -->
+<dimen name="xct_biaotilan_font">15dip</dimen>
+<dimen name="xct_biaotilan_height">36dip</dimen>
+
+
+<!-- 列表栏字体大小 -->
+
+<!-- 4.8 dialgo宽度 -->
+<dimen name="xct_dialog_width">270dp</dimen>
+</resources>

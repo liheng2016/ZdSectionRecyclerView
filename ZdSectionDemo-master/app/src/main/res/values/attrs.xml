@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="DecimalEditText">
+        <attr name="decimalNumber" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PointView">
+        <attr name="PointViewColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomToolBar">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="reference|color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddunderlineColor" format="color"/>
+        <attr name="dddividerColor" format="color"/>
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+        <attr name="ddmenuMenuHeightPercent" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="ScrollViewWithStickHeader">
+        <attr name="autoscroll" format="boolean" />
+    </declare-styleable>
+    <!--轮播图-->
+    <declare-styleable name="BannerView">
+        <attr name="aspectRatio" format="float"/>   <!-- 宽高比 -->
+        <attr name="defaultSrc" format="integer|reference" />     <!-- 点位图 -->
+        <attr name="updateTime" format="integer" />     <!-- 图片切换时间 -->
+        <attr name="indicatorVisible" format="boolean" /> <!-- 是否显示指示器 -->
+        <attr name="indicatorHeight" format="dimension" /> <!-- 指示器的高度 -->
+        <attr name="indicatorBackground" format="color|reference" />    <!-- 指示器的背景颜色 -->
+        <attr name="indicatorPositionSize" format="dimension" /> <!-- 指示点的大小 -->
+    </declare-styleable>
+
+
+    <!--图表样式-->
+    <declare-styleable name="SunnyGraphStyle">
+        <!--图表标题-->
+        <attr name="graphTitle" format="string"/>
+        <!--X轴名称-->
+        <attr name="X_AxisName" format="string"/>
+        <!--Y轴名称-->
+        <attr name="Y_AxisName" format="string"/>
+        <attr name="axisTextSize" format="dimension|integer"/>
+        <attr name="axisTextColor" format="color|integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressDown">
+        <attr name="image_ground" format="reference" />
+        <attr name="image_color" format="color" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="AroundCircleView">
+        <attr name="textColorAc" format="color" />
+        <attr name="textSizeAc" format="dimension" />
+        <attr name="textBgColor" format="color" />
+    </declare-styleable>
+
+</resources>

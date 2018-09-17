@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xct_lthj_color_efeff4"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <ViewStub
+        android:id="@+id/stub_base_fragment_title"
+        android:layout_width="match_parent"
+        android:layout="@layout/xct_lthj_rrcb_layout_titlellayout"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

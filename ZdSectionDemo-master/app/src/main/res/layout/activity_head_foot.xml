@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <listview.view.PullToRefreshListView
+        android:id="@+id/tv_head_foot_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:cacheColorHint="@null"
+        android:divider="#FFF"
+        android:layout_weight="1"
+        android:dividerHeight="1px"
+        android:scrollbars="none">
+
+
+    </listview.view.PullToRefreshListView>
+
+
+
+    <Button
+        android:text="展开"
+        android:id="@+id/bt_ex"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </Button>
+</LinearLayout>

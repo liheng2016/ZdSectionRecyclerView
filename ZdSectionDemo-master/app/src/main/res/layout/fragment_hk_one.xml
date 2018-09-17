@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_textContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x50"
+        android:gravity="center_vertical"
+        android:text="中签日的09:00-12:00公布中签数据，用户可收到短信通知。" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <customview.DrawableTextView
+            app:drawableHeight="@dimen/xct_space_value_x22"
+            app:drawableWidth="@dimen/xct_space_value_x22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xct_space_value_x12"
+            android:drawableLeft="@drawable/ic_lthj_customer_service"
+            android:drawablePadding="@dimen/xct_space_value_x4"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/xct_space_value_x12"
+            android:paddingTop="@dimen/xct_space_value_x12"
+            android:text="常见问题" />
+
+        <ImageView
+
+            android:layout_width="@dimen/xct_space_value_x8"
+            android:layout_height="@dimen/xct_space_value_x15"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/xct_space_value_x12"
+            android:src="@drawable/xct_lthj_newquot_draw_arrows_right" />
+    </RelativeLayout>
+</LinearLayout>

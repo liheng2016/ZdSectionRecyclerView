@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/xct_space_value_x6"
+    android:layout_marginTop="@dimen/xct_space_value_x10"
+    android:background="@color/white08"
+    android:paddingLeft="@dimen/xct_space_value_x10"
+    android:paddingRight="@dimen/xct_space_value_x10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_hk_daxin_xuzhi"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/xct_space_value_x10"
+        android:paddingLeft="@dimen/xct_space_value_x7"
+        android:paddingRight="@dimen/xct_space_value_x7"
+        android:paddingTop="@dimen/xct_space_value_x10">
+
+
+        <TextView
+            android:id="@+id/tv_two_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/xct_lthj_color_black"
+            android:textSize="@dimen/xct_space_value_x13" />
+
+        <TextView
+            android:id="@+id/tv_two_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/xct_space_value_x2"
+            android:layout_marginTop="@dimen/xct_space_value_x5"
+            android:text=""
+            android:textColor="#444"
+            android:textSize="@dimen/xct_space_value_x12"
+            app:layout_constraintTop_toBottomOf="@+id/tv_two_title" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

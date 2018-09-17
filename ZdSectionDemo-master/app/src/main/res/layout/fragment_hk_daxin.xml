@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:id="@+id/root_llview"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hk_daxin_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_bg_head"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+             />
+
+        <LinearLayout
+        android:layout_below="@+id/tv_bg_head"
+            android:id="@+id/ll_topView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <include layout="@layout/item_tab_three_click" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+

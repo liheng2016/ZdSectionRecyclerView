@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="view.niudong.com.demo">
+
+    <!-- 百度Crash需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 仅debug模式下dump OOM文件需要以下权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 记录logcat日志功能 所需的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainTabActivity" />
+        <activity android:name="listview.activity.ListViewActivity" />
+        <activity android:name="recycleview.activity.RecyclerActivity" />
+        <activity android:name="recycleview.activity.ItemDecorationActivity" />
+        <!-- <activity android:name=".QRCodeActivity" /> -->
+        <activity android:name="listview.activity.TestAddHeadActivity" />
+        <activity android:name="listview.activity.ListViewAddHeadFootActivity" />
+        <activity android:name="recycleview.activity.RefreshRecyActivity" />
+        <activity android:name=".RiskLevelActivity" />
+        <activity android:name="recycleview.view.InvestorBillMainActivity" />
+        <activity android:name="testdb.TestDBApiActivity" />
+        <activity android:name=".MultiActivity" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".HandlerMsgActivity" />
+        <activity android:name=".FragmentStackActivity" />
+        <activity android:name=".FragmentVPActivity" />
+        <activity android:name=".TestLeakActivity" />
+        <activity android:name=".NewsContentActivity" />
+        <activity android:name=".CrashTestActivity" />
+        <activity android:name=".TestPayActivity" />
+        <activity android:name="mvp.view.ListActivity" />
+        <activity
+            android:name="base.BaseFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Ping++ SDK所需要注册 -->
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 微信支付 sdk ，也是 Ping++ sdk 调用入口 -->
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+
+        <!-- 支付宝支付需要注册 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name=".NavigationMainActivity" />
+        <activity android:name=".FragMentTabHostActivity" />
+        <activity android:name=".CoolLayoutActivity" />
+        <activity android:name=".CustomIndicatorActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".TestOnClickActivity" />
+        <activity android:name=".TestMapActivity" />
+        <activity android:name=".RxBusActivity" />
+        <activity android:name=".TestHtmlJsActivity" />
+        <activity android:name=".TranslucentActivity" />
+        <activity android:name=".NewActivity" />
+        <activity android:name=".ScrollDetailActivity" />
+        <activity android:name=".CoolTranslucentActivity" />
+        <activity android:name=".SlideScrollActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StickViewPagerActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".CustomViewActivity" />
+
+        <service android:name=".service.MyService" />
+        <service android:name=".service.MyIntentService" />
+        <service android:name=".service.SeverAidlSerVice" />
+
+        <receiver android:name=".receiver.MyReceiver">
+            <intent-filter>
+                <action android:name="niudong" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".rxjava.RxJavaActivity" />
+        <activity android:name=".ClideAidlConnActivity"></activity>
+    </application>
+
+</manifest>

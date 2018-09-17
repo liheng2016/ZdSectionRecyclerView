@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x40"
+        android:background="#000"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/xct_space_value_x10"
+        android:text="终于等到你~~"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/xct_space_value_x15" />
+
+    <customview.BannerView
+        android:id="@+id/mBannerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </customview.BannerView>
+
+
+</LinearLayout>

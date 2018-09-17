@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/xct_space_value_x15"
+        android:layout_height="@dimen/xct_space_value_x45"
+        android:layout_marginTop="@dimen/xct_space_value_x8"
+        android:gravity="center|left"
+
+        android:text="小伙伴，快来观看哦！！！........."
+        android:textSize="@dimen/xct_space_value_x16" />
+
+    <ImageView
+        android:id="@+id/iv_red"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

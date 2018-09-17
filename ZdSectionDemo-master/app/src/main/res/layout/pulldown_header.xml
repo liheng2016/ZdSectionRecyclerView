@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xct_lthj_color_bggray" 
+    >
+    <!-- 内容 -->
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xct_lthj_newquot_padding_large" >
+
+        <!-- 箭头 -->
+
+        <ImageView
+            android:id="@+id/pulldown_header_arrow"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pulldown_logo" />
+
+        <!-- 提示 -->
+
+        <TextView
+            android:id="@+id/pulldown_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xct_lthj_margin_medium"
+            android:layout_toRightOf="@+id/pulldown_header_arrow"
+            android:text="下拉刷新"
+            android:textSize="@dimen/xct_lthj_font_large" 
+            android:textColor="@color/xct_lthj_color_black"/>
+
+        <!-- 最近更新 -->
+
+        <TextView
+            android:id="@+id/pulldown_header_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/xct_lthj_margin_medium"
+            android:layout_toRightOf="@+id/pulldown_header_text"
+            android:textSize="@dimen/xct_lthj_font_medium" 
+            android:textColor="@color/xct_lthj_color_closeblack"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

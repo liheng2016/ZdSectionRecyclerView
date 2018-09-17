@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/xct_lthj_color_whitebackground"
+    android:orientation="vertical">
+
+    <!--内容区-->
+    <FrameLayout
+        android:id="@+id/xct_lthj_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="32"
+        android:orientation="vertical" />
+
+    <!--分隔线-->
+    <View
+        android:id="@+id/xct_lthj_newquot_id_maintab_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/xct_lthj_newquot_space_zeroone"
+        android:background="@color/xct_lthj_color_hk_divide" />
+
+    <!--tab栏-->
+    <LinearLayout
+        android:id="@+id/xct_lthj_newquot_id_maintab"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/xct_space_value_x50"
+        android:background="#F9F9F9"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/xct_space_value_x2"
+        android:paddingTop="@dimen/xct_space_value_x2">
+
+        <customview.DrawableTextView
+            android:id="@+id/xct_lthj_frame_text_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/select_ic_lthj_frame_tab1"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/select_font_999_red_selected"
+            android:textSize="@dimen/xct_lthj_font_medium"
+            app:drawableHeight="@dimen/xct_space_value_x30"
+            app:drawableWidth="@dimen/xct_space_value_x30" />
+
+        <customview.DrawableTextView
+            android:id="@+id/xct_lthj_frame_text_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/select_ic_lthj_frame_tab2"
+            android:gravity="center"
+            android:text="理财"
+            android:textColor="@color/select_font_999_red_selected"
+            android:textSize="@dimen/xct_lthj_font_medium"
+            app:drawableHeight="@dimen/xct_space_value_x30"
+            app:drawableWidth="@dimen/xct_space_value_x30" />
+
+        <customview.DrawableTextView
+            android:id="@+id/xct_lthj_frame_text_tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/select_ic_lthj_frame_tab3"
+            android:gravity="center"
+            android:text="自选"
+            android:textColor="@color/select_font_999_red_selected"
+            android:textSize="@dimen/xct_lthj_font_medium"
+            app:drawableHeight="@dimen/xct_space_value_x30"
+            app:drawableWidth="@dimen/xct_space_value_x30" />
+
+
+
+        <customview.DrawableTextView
+            android:id="@+id/xct_lthj_frame_text_tab4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/select_ic_lthj_frame_tab5"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/select_font_999_red_selected"
+            android:textSize="@dimen/xct_lthj_font_medium"
+            app:drawableHeight="@dimen/xct_space_value_x30"
+            app:drawableWidth="@dimen/xct_space_value_x30" />
+    </LinearLayout>
+</LinearLayout>

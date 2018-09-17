@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--港股打新-->
+    <LinearLayout
+        android:id="@+id/ll_daxin_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x60"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <View
+            android:layout_width="@dimen/xct_space_value_x1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/xct_space_value_x8"
+            android:layout_marginRight="@dimen/xct_space_value_x10"
+            android:background="@color/xct_lthj_color_hk_divide" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="ehwihiufhwurhfehfhf3e2ui3rhu34r43fy43fhueufh"
+            android:textColor="@color/xct_lthj_color_black"
+            android:textSize="@dimen/xct_space_value_x14" />
+
+    </LinearLayout>
+
+    <View
+
+        style="@style/DividerHorizontal" />
+    <!--第二个-->
+    <LinearLayout
+        android:id="@+id/ll_daxin_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x60"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xct_space_value_x8"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="ehwihiufhwurhfehfhfhueufh"
+            android:textColor="@color/xct_lthj_color_black"
+            android:textSize="@dimen/xct_space_value_x14" />
+    </LinearLayout>
+
+    <View style="@style/DividerHorizontal" />
+    <!--第三个-->
+    <LinearLayout
+        android:id="@+id/ll_daxin_three"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x60"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xct_space_value_x8"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="ehwihiufhwurhfehfhfhueufh"
+            android:textColor="@color/xct_lthj_color_black"
+            android:textSize="@dimen/xct_space_value_x14" />
+    </LinearLayout>
+
+    <View
+        style="@style/DividerHorizontal"
+        android:layout_height="@dimen/xct_space_value_x10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/xct_space_value_x12"
+        android:text="资讯推荐" />
+
+    <View style="@style/DividerHorizontal" />
+
+    <TextView
+        android:id="@+id/tv_daxin_zixun_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/xct_space_value_x12"
+        android:singleLine="true"
+        android:text="478378ty7457457454" />
+
+    <TextView
+        android:id="@+id/tv_daxin_zixun_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xct_space_value_x40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/xct_space_value_x12"
+        android:singleLine="true"
+        android:text="478y78tg47t4e5t75e4t574et44t83ty8ty848yt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_daxin_zixun_three"
+        android:layout_height="@dimen/xct_space_value_x40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/xct_space_value_x12"
+        android:singleLine="true"
+        android:text="3t43t3y47ty475yt74t5t43t667343t444444463t437t6" />
+
+    <View
+        style="@style/DividerHorizontal"
+        android:layout_height="@dimen/xct_space_value_x14" />
+
+</LinearLayout>

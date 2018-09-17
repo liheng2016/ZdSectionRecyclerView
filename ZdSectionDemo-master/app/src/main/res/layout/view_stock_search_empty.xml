@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/xct_space_value_x50"
+    android:paddingRight="@dimen/xct_space_value_x50"
+    android:paddingTop="@dimen/xct_space_value_x100">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/xct_space_value_x60"
+        android:layout_height="@dimen/xct_space_value_x40"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xct_lthj_newquot_margin_medium"
+        android:layout_marginStart="@dimen/xct_lthj_newquot_margin_medium"
+        android:text="未搜索到您想找的股票请点击“搜索”进行云搜索！"
+        android:textSize="@dimen/xct_lthj_newquot_font_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+        app:layout_constraintLeft_toRightOf="@+id/imageView1"
+        app:layout_constraintRight_toRightOf="@+id/bt_stock_search"
+        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+    <Button
+        android:id="@+id/bt_stock_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xct_lthj_newquot_margin_medium"
+        android:paddingBottom="@dimen/xct_lthj_newquot_padding_small"
+        android:paddingTop="@dimen/xct_lthj_newquot_padding_small"
+        android:text="云搜索"
+        android:textSize="@dimen/xct_lthj_newquot_font_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+</android.support.constraint.ConstraintLayout>
