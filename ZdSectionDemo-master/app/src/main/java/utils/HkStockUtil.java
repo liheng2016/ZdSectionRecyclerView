@@ -14,11 +14,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import entity.Category;
 import entity.HkHistoryRenGouData;
+import entity.ImageItem;
 import entity.ItemOneBean;
 import entity.ItemTwoBean;
 import entity.ListGrup;
+import fragment.CustomClockFragment;
+import fragment.CustomViewChiFragment;
+import fragment.StockKlineFragment;
 import view.niudong.com.demo.MyApplication;
+import view.niudong.com.demo.R;
 
 import static view.niudong.com.demo.R.id.webView;
 
@@ -36,6 +42,7 @@ public class HkStockUtil {
     //缓存WebView
     private Map<Integer, WebView> mCacheData = new HashMap<>();
     private String url = "https://gitee.com/NiuDong/";
+    private List<Category> popList2Data;
 
     public Map<Integer, WebView> getmCacheData() {
         return mCacheData;
@@ -73,6 +80,25 @@ public class HkStockUtil {
         }
         if (null == webView) return;
         homeWebRootView.addView(webView);
+    }
+
+    public List<Category> getPopListData() {
+        List<Category> result = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            Category data = new Category("跨平台flutter" + i);
+            result.add(data);
+        }
+        return result;
+    }
+
+    public List<Category> getPopList2Data() {
+
+        List<Category> result = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            Category data = new Category("做一个自己的产品" + i);
+            result.add(data);
+        }
+        return result;
     }
 
 
@@ -229,9 +255,9 @@ public class HkStockUtil {
         mRecyclerData.add("采用multitype复杂列表");
         mRecyclerData.add("采用自定义getItemViewType方式");
         mRecyclerData.add("RecyclerView嵌套水平RecyclerView无冲突");
+        mRecyclerData.add("Pop中的RecyclerView");
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
-
         //TODO 主页框架页面搭建
         listGrup = new ListGrup();
         listGrup.titleData = "主页框架页面搭建";
@@ -241,7 +267,6 @@ public class HkStockUtil {
         mRecyclerData.add("封装List列表管理子Fragment");
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
-
         //TODO  滑动列表折叠效果实现
         listGrup = new ListGrup();
         listGrup.titleData = "滑动列表悬停头部";
@@ -251,28 +276,48 @@ public class HkStockUtil {
         mRecyclerData.add("折叠三：StickyNavLayout+RecyclerView");
         mRecyclerData.add("折叠四：替换索星ScrollView+Recycler");
         mRecyclerData.add("折叠五：一个RecyclerView切多Tab（悬停）");
-//        mRecyclerData.add("折叠六：一个RecyclerView切多Tab（悬停");
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
-
         //TODO 自定义View
+        listGrup = new ListGrup();
+        listGrup.titleData = "自定义View（纯手工）";
+        mRecyclerData = new ArrayList<>();
+        mRecyclerData.add("自定义图表相关");
+        mRecyclerData.add("自定义刻度尺");
+        mRecyclerData.add("自定义钟表");
+        mRecyclerData.add("自定义股票K线");
+        listGrup.setmChildStr(mRecyclerData);
+        grupList.add(listGrup);
+        //TODO 自定义View
+        listGrup = new ListGrup();
+        listGrup.titleData = "Fragment相关";
+        mRecyclerData = new ArrayList<>();
+        mRecyclerData.add("Fragment任务栈处理");
+        mRecyclerData.add("LazyFragment懒加载+ViewPager");
+        listGrup.setmChildStr(mRecyclerData);
+        grupList.add(listGrup);
+        listGrup = new ListGrup();
+        listGrup.titleData = "跨平台嵌入RN模块";
+        mRecyclerData = new ArrayList<>();
+        mRecyclerData.add("ReactNative列表展示");
+        listGrup.setmChildStr(mRecyclerData);
+        grupList.add(listGrup);
+        //TODO 其他相关
         listGrup = new ListGrup();
         listGrup.titleData = "其他相关";
         mRecyclerData = new ArrayList<>();
         mRecyclerData.add("封装接口回调方便传消息");
-        mRecyclerData.add("自定义图表相关");
         mRecyclerData.add("列表点击跳详情多页面--左右滑动");
         mRecyclerData.add("数据库测试--Api 和Sql");
-        mRecyclerData.add("Fragment任务栈处理");
-        mRecyclerData.add("LazyFragment懒加载+ViewPager");
         mRecyclerData.add("App内存泄漏那些事");
         mRecyclerData.add("Okhttp-Ping++支付");
         mRecyclerData.add("Mvp+Retrofit+Okhttp列表(接口不通有代码)");
         mRecyclerData.add("H5和Js互调");
-        mRecyclerData.add("包名得到签名");
         mRecyclerData.add("线性布局写Tab切换");
         mRecyclerData.add("WebView预加载");
         mRecyclerData.add("Aidl跨进程通讯");
+        mRecyclerData.add("BitMap合成图片");
+        mRecyclerData.add("手动解析Json");
 
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
@@ -286,6 +331,7 @@ public class HkStockUtil {
         imageUrl.add(redYi);
         imageUrl.add(fangxin);
         imageUrl.add(vpOne);
+//        TODO
         return imageUrl;
     }
 

@@ -4,7 +4,7 @@ package contants;
  */
 
 public interface NetConstants {
-    String OUTSIDE = "XctAskAndAnswerBusinessWebApp/askandanswerForward.jhtml";
+    String OUTSIDE = "XctUserBusinessWebApp/user/xctUserForward.jhtml";
     String EVENTTYPE_REGISTER = "mobile.user.register";
     String EVENTTYPE_LOGIN = "mobile.user.login";
     String EVENTTYPE_FORGET = "mobile.user.password.forget";

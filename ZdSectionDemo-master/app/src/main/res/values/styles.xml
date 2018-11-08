@@ -14,6 +14,7 @@
         <item name="android:layout_height">1px</item>
         <item name="android:background">@color/nomal_sex</item>
     </style>
+
     <style name="CustomDialog" parent="android:style/Theme.Dialog">
         <!--背景颜色及透明程度-->
         <!--<item name="android:windowFrame">@null</item>-->
@@ -63,8 +64,8 @@
         <attr name="android:drawableRight" />
         <attr name="android:drawableTop" />
         <attr name="android:drawableBottom" />
-        <attr name="drawableWidth" format="dimension"/>
-        <attr name="drawableHeight" format="dimension"/>
+        <attr name="drawableWidth" format="dimension" />
+        <attr name="drawableHeight" format="dimension" />
     </declare-styleable>
 
 
@@ -73,6 +74,7 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
     </style>
+
     <style name="TranslucentTheme">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
@@ -81,5 +83,14 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+    <!--刻度尺-->
+    <declare-styleable name="LoopScaleView">
+        <attr name="maxShowItem" format="integer" />
+        <attr name="maxValue" format="integer" />
+        <attr name="oneItemValue" format="integer" />
+        <attr name="cursorColor" format="color" />
+        <attr name="scaleTextColor" format="color" />
+        <attr name="cursorMap" format="reference" />
+    </declare-styleable>
 
 </resources>

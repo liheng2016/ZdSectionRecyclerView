@@ -59,7 +59,6 @@ public abstract class TestBaseFragment extends Fragment implements OnBackPressed
             initListener();
             initData();
         }
-
         return mView;
     }
     /** 初始化标题相关 */

@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.gson.Gson;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
@@ -142,6 +145,18 @@ public class BuyFragment extends BaseLazyFragment {
         mViewPager = LayoutInflater.from(getContext()).inflate(R.layout.item_view_pager, null);
         ImageView ivFour = (ImageView) mViewPager.findViewById(R.id.iv_icon);
         GlideManagerUtil.glideLoader(getContext(), vpTwo, R.mipmap.ic_launcher, R.mipmap.ic_launcher, ivFour);
+        Glide.with(getActivity())
+                .load(vpTwo)
+                .placeholder( R.mipmap.ic_launcher)
+                .error( R.mipmap.ic_launcher)
+                .override(100,200)
+                .fitCenter()
+                .centerCrop()
+                .skipMemoryCache(true)//不会放到内存  资源调用方法一致性
+                .diskCacheStrategy(DiskCacheStrategy.NONE)//什么都不缓存
+                .priority(Priority.HIGH)//优先级
+                .into(ivFour);
+
         itemList5.add(mViewPager);
         adapter.register(ViewPagerItem.class, new ViewPagerBinder(itemList5));
 

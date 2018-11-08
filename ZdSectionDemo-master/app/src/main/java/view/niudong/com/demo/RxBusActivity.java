@@ -1,24 +1,19 @@
 package view.niudong.com.demo;
 
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.TextView;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import recycleview.activity.ItemDecorationActivity;
 import utils.Bus;
 import utils.Logger;
-import utils.MyUtil;
-import utils.ToastUtils;
 
 /**
  * http://blog.csdn.net/u010687392/article/details/47809295
@@ -98,7 +93,7 @@ public class RxBusActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()) {
             case R.id.tv_send_msg:
                 //发消息
-                Bus.getInstance().post(MainActivity.RECEVICE_DATA, "你好啊！，我的朋友");
+                Bus.getInstance().post(ItemDecorationActivity.RECEVICE_DATA, "你好啊！，我的朋友");
                 break;
             default:
                 break;

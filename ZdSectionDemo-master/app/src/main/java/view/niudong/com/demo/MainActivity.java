@@ -37,7 +37,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.File;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -61,7 +60,6 @@ import recycleview.view.InvestorBillMainActivity;
 import testdb.TestDBApiActivity;
 import utils.Bus;
 import utils.GlideUtils;
-import utils.HkStockUtil;
 import utils.MyUtil;
 import utils.ToastUtils;
 

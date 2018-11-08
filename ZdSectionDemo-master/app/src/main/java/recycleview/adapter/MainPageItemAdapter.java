@@ -147,10 +147,10 @@ public class MainPageItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         SpannableString builder = new SpannableString(textName);
         int color = mContext.getResources().getColor(R.color.colorPrimary);
         //设置字体颜色
-        builder.setSpan(new ForegroundColorSpan(color), 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        builder.setSpan(new ForegroundColorSpan(color), 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         //设置字体大小
-        builder.setSpan(new AbsoluteSizeSpan(18, true), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        builder.setSpan(new AbsoluteSizeSpan(10, true), 1, 7, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        builder.setSpan(new AbsoluteSizeSpan(18, true), 0, 2, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        builder.setSpan(new AbsoluteSizeSpan(14, true), 2, textName.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         textView.setText(builder);
     }
 }

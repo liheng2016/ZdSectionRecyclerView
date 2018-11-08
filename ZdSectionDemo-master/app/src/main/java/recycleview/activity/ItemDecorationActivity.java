@@ -1,8 +1,5 @@
 package recycleview.activity;
 
-import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.Color;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -16,15 +13,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import base.BaseActivity;
 import base.BaseFragmentActivity;
 import contants.FragmentPage;
 import customview.FloatingStickItemDecoration;
 import entity.ListGrup;
 import entity.UserInfo;
 import in.srain.cube.views.ptr.PtrFrameLayout;
-import listview.activity.ListViewActivity;
-import listview.activity.ListViewAddHeadFootActivity;
-import listview.activity.TestAddHeadActivity;
 import mvp.view.ListActivity;
 import pullrefresh.XctPtrLayout;
 import pullrefresh.XctRefreshLayout;
@@ -36,49 +31,27 @@ import utils.ColorUtils;
 import utils.HkStockUtil;
 import utils.ToastUtils;
 import view.niudong.com.demo.ClideAidlConnActivity;
-import view.niudong.com.demo.CoolLayoutActivity;
 import view.niudong.com.demo.CoolTranslucentActivity;
-import view.niudong.com.demo.CrashTestActivity;
-import view.niudong.com.demo.EditTextActivity;
 import view.niudong.com.demo.FragMentTabHostActivity;
 import view.niudong.com.demo.FragmentStackActivity;
 import view.niudong.com.demo.FragmentVPActivity;
-import view.niudong.com.demo.HandlerMsgActivity;
-import view.niudong.com.demo.MainActivity;
+import view.niudong.com.demo.Main2Activity;
 import view.niudong.com.demo.MainTabActivity;
-import view.niudong.com.demo.MultiActivity;
 import view.niudong.com.demo.MyApplication;
 import view.niudong.com.demo.NavigationMainActivity;
 import view.niudong.com.demo.NewActivity;
 import view.niudong.com.demo.R;
-import base.BaseActivity;
-import view.niudong.com.demo.RiskLevelActivity;
 import view.niudong.com.demo.RxBusActivity;
-import view.niudong.com.demo.ScrollDetailActivity;
-import view.niudong.com.demo.SearchActivity;
 import view.niudong.com.demo.SlideScrollActivity;
-import view.niudong.com.demo.StickViewPagerActivity;
 import view.niudong.com.demo.TestHtmlJsActivity;
 import view.niudong.com.demo.TestLeakActivity;
 import view.niudong.com.demo.TestOnClickActivity;
 import view.niudong.com.demo.TestPayActivity;
 import view.niudong.com.demo.TranslucentActivity;
 
-/**
- * https://github.com/laobie/StatusBarUtil
- * 要是单纯的状态栏变色     系统方法  在activity xml 根布局加一行 android:fitsSystemWindows="true"   并且在不同版本api 的values
- * 实现了点击事件
- * https://github.com/NIUDONG2015/StickyItemDecoration
- * <p>
- * https://blog.csdn.net/say_from_wen/article/details/77184666
- * https://blog.csdn.net/a62321780/article/details/54411580
- * <p>
- * //滑动监听
- * https://blog.csdn.net/zl18603543572/article/details/77876030?locationNum=9&fps=1
- */
 public class ItemDecorationActivity extends BaseActivity implements MainPageItemAdapter.OnItemClickListener {
     private static final String TAG = "GenerateQrCodeActivity";
-    private Map<Integer, List<String>> datas = new HashMap<>();//模拟服务器返回数据
+    private HashMap<Integer, List<String>> datas;//模拟服务器返回数据
     private List<String> mResultData = new ArrayList<>();//adapter数据源
     private Map<Integer, String> keys = new HashMap<>();//存放所有key的位置和内容
     private MainPageItemAdapter adapter;
@@ -99,6 +72,10 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
             }
         }
     };
+
+    public ItemDecorationActivity() {
+        datas = new HashMap<>();
+    }
 
     @Override
     protected void initView() {
@@ -185,8 +162,8 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
     }
 
     private void processTestData(UserInfo userInfo) {
-        userInfo.age=50;
-        userInfo.username="JN";
+        userInfo.age = 50;
+        userInfo.username = "JN";
     }
 
     @Override
@@ -262,6 +239,7 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
                 break;
 
             case "App内存泄漏那些事":
+                enterActivity(TestLeakActivity.class);
                 break;
 
             case "Okhttp-Ping++支付":
@@ -295,6 +273,27 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
             case "自定义图表相关":
                 BaseFragmentActivity.startFragment(this, FragmentPage.CUSTOMVIEW_FRAGMENT);
                 break;
+
+            case "BitMap合成图片":
+                enterActivity(Main2Activity.class);
+                break;
+
+            case "自定义刻度尺":
+                BaseFragmentActivity.startFragment(this, FragmentPage.CUSTOMVIEWCHI_FRAGMENT);
+                break;
+            case "自定义钟表":
+                BaseFragmentActivity.startFragment(this, FragmentPage.CUSTOM_CLOCK_FRAGMENT);
+                break;
+            case "自定义股票K线":
+                BaseFragmentActivity.startFragment(this, FragmentPage.STOCK_KLINE_FRAGMENT);
+                break;
+
+            case "Pop中的RecyclerView":
+                BaseFragmentActivity.startFragment(this, FragmentPage.POP_RECYCLER_FRAGMENT);
+                break;
+            case "手动解析Json":
+                BaseFragmentActivity.startFragment(this, FragmentPage.DATA_JSON_FRAGMENT);
+                break;
             default:
                 break;
 
@@ -315,5 +314,10 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
     protected void onDestroy() {
         super.onDestroy();
         Bus.getInstance().unregister(RECEVICE_DATA, mMsgSuccess);
+        //清空所有WebView的缓存
+        //   Map<Integer, WebView> integerWebViewMap = HkStockUtil.getInstance().getmCacheData();
+        // if (integerWebViewMap != null && integerWebViewMap.size() > 0) {
+        //     integerWebViewMap.clear();
+        // }
     }
 }

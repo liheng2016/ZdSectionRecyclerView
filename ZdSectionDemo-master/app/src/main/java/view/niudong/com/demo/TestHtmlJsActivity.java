@@ -60,7 +60,9 @@ public class TestHtmlJsActivity extends AppCompatActivity {
     public void sendInfoToJs(View view) {
         String msg = ((EditText) findViewById(R.id.input_et)).getText().toString();
         //调用js中的函数：showInfoFromJava(msg)
-        webView.loadUrl("javascript:showInfoFromJava('" + msg + "')");
+//        webView.loadUrl("javascript:showInfoFromJava('" + msg + "')");
+        //从 Android 传递参数到 H5 界面
+        webView.loadUrl("javascript:getFromAndroidData(\"" + msg + "\")");
     }
 
 }

@@ -1,8 +1,11 @@
 package view.niudong.com.demo;
 
+import android.Manifest;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.view.WindowManager;
 import android.webkit.WebView;
 import android.widget.ImageView;
@@ -12,7 +15,7 @@ import recycleview.activity.ItemDecorationActivity;
 import utils.HkStockUtil;
 
 public class SplashActivity extends BaseActivity {
-    private static final long DURATION = 1200;
+    private static final long DURATION = 2000;
     private ImageView splashView;
     public String FEIDI_ZIXUN_SIDI_URL = "https://www.21fid.com/external/dyqh/newsFid/news/financing";
     private static final String URL_BASE = "https://github.com/NIUDONG2015";
@@ -56,6 +59,7 @@ public class SplashActivity extends BaseActivity {
 
     @Override
     protected void initData() {
+
 
     }
 }

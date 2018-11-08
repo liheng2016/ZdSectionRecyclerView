@@ -29,7 +29,6 @@
         <activity android:name=".MainTabActivity" />
         <activity android:name="listview.activity.ListViewActivity" />
         <activity android:name="recycleview.activity.RecyclerActivity" />
-        <activity android:name="recycleview.activity.ItemDecorationActivity" />
         <!-- <activity android:name=".QRCodeActivity" /> -->
         <activity android:name="listview.activity.TestAddHeadActivity" />
         <activity android:name="listview.activity.ListViewAddHeadFootActivity" />
@@ -105,7 +104,9 @@
         </receiver>
 
         <activity android:name=".rxjava.RxJavaActivity" />
-        <activity android:name=".ClideAidlConnActivity"></activity>
+        <activity android:name=".ClideAidlConnActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name="recycleview.activity.ItemDecorationActivity"></activity>
     </application>
 
 </manifest>

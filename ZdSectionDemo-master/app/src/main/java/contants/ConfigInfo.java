@@ -8,7 +8,8 @@ import android.graphics.Color;
 
 public class ConfigInfo {
     //    IP和端口号
-    private static String HOST = "https://view_hkt_border_shadow.xincaitong.com:8443/";
+    private static String HOST = "https://xincaitong.com:8443/";
+    private static String buglyId="ef6e50400d";
 
 
     public static void setHOST(String HOST) {
@@ -28,4 +29,8 @@ public class ConfigInfo {
     public static final int COLOR_HK_A3A8AF = Color.parseColor("#a3a8af");
     public static final int COLOR_HK_7D8187 = Color.parseColor("#7d8187");
     public static final int COLOR_HK_01A5E0 = Color.parseColor("#01a5e0");
+
+    public static String getBuglyId() {
+        return buglyId;
+    }
 }

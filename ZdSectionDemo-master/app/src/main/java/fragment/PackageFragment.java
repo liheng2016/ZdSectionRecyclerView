@@ -32,7 +32,7 @@ public class PackageFragment extends TestBaseFragment implements MyTextWatcher.C
 
     @Override
     protected String getFragmentTitle() {
-        return null;
+        return "不建议采用";
     }
 
     @Override

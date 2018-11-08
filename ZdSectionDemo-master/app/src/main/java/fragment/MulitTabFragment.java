@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -88,6 +89,8 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
     private LinearLayoutManager mLayoutManager;
     private int dyPos;
     private int jugedyPos;
+    private View mMoreTitlte;
+    private boolean isShowMore;
 
 
     @Override
@@ -125,12 +128,15 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
         int width = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
         int height = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
         mHeadView.measure(width, height);
-        viewHeight = mHeadView.getMeasuredHeight()-UIUtils.dip2px(40);
+        viewHeight = mHeadView.getMeasuredHeight() - UIUtils.dip2px(40);
         Logger.d("mHeadViewMeasuredHeightht", "mHeadViewMeasuredHeightht" + viewHeight);
 
         //TODO  子View内容标题
         mChildContentTitlte = LayoutInflater.from(getActivity()).inflate(R.layout.hk_daxin_detail_title_content, mRecyclerView, false);
         mHeadTvContent = (TextView) mChildContentTitlte.findViewById(R.id.tv_head_content);
+        mMoreTitlte = LayoutInflater.from(getActivity()).inflate(R.layout.hk_daxin_click_more, mRecyclerView, false);
+        RelativeLayout mClickMore = mMoreTitlte.findViewById(R.id.click_more);
+        mClickMore.setOnClickListener(this);
         //一个View
         mOtherView = LayoutInflater.from(getActivity()).inflate(R.layout.hk_daxin_detail_title_other, mRecyclerView, false);
         mRootWebView = (LinearLayout) LayoutInflater.from(getActivity()).inflate(R.layout.webview, mRecyclerView, false);
@@ -156,9 +162,9 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
 
                 jugedyPos += dy;//偏移量
                 int firstVisiblePos = ((LinearLayoutManager) recyclerView.getLayoutManager()).findFirstVisibleItemPosition();
-                Log.d("Tab", "当前dy " + dy + "............当前可见的postion" + jugedyPos+"viewheight"+viewHeight);
+                Log.d("Tab", "当前dy " + dy + "............当前可见的postion" + jugedyPos + "viewheight" + viewHeight);
 
-                if (firstVisiblePos >=1) {
+                if (firstVisiblePos >= 1) {
                     isTabTop = true;
                     dyPos = viewHeight;
                     MyUtil.setVisibility(mllTopView, View.VISIBLE);
@@ -237,6 +243,10 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
                 setSelectedTabLayout(mCurShowTabIndex, 2);
                 setShowData(ITEM_THREE);
                 break;
+            case R.id.click_more:
+                isShowMore = !isShowMore;
+                setShowData(ITEM_THREE);
+                break;
             default:
         }
     }
@@ -281,7 +291,7 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
      * 设置显示数据
      */
     private void setShowData(int mPostion) {
-        if (mClickPage == currPage) return;
+//        if (mClickPage == currPage) return;   优化处理
         //刷新数据
         mData.clear();
         //添加头部和Tab
@@ -304,12 +314,16 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
                 break;
             case ITEM_THREE:
                 currPage = 2;
+                mData.add(mMoreTitlte);
                 setTitle("大家好！我是C标题 券商将上个交易日用户准备的新股认购资金化划转给交易所完成认购，总资产这部分资金将减少。");
                 mData.add(mChildContentTitlte);
                 mData.addAll(HkStockUtil.getInstance().getZhongQianOtherList());
-                //标题头  自己改名
-                mData.add(mOtherView);
-                mData.addAll(HkStockUtil.getInstance().getRenGoTimeChildList());
+                if (isShowMore) {
+                    //标题头  自己改名
+                    mData.add(mOtherView);
+                    mData.addAll(HkStockUtil.getInstance().getRenGoTimeChildList());
+                }
+
                 //常见问题
                 break;
             default:
@@ -343,7 +357,7 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
 
     @Override
     protected String getFragmentTitle() {
-        return null;
+        return "一个RecyclerView切多Tab";
     }
 
 

@@ -1,3 +1,15 @@
-1¡¢¿í¸ßÏÞ¶¨·ûÊÊÅä£º
+1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£º
    https://blog.csdn.net/wangwangli6/article/details/63258270/
+
+
+           if (webView != null) {
+               webView.reload();
+               webView.setWebViewClient(null);
+               webView.setWebChromeClient(null);
+               webView.loadDataWithBaseURL(null, "", "text/html", "utf-8", null);
+               webView.clearHistory();
+   //            ((ViewGroup) webView.getParent()).removeView(webView);
+               webView.destroy();
+               webView = null;
+           }
 

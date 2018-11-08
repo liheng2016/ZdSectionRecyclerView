@@ -27,12 +27,13 @@ public class DateUtils {
 
     /*
      * 获得当前时间
-	 */
+     */
     public static String getNowTime() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd HH:mm:ss");// MM-dd
         // 当前日期
         return dateFormat.format(new Date(System.currentTimeMillis()));
     }
+
     /**
      * 6月/2018
      */
@@ -41,12 +42,13 @@ public class DateUtils {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMM");// MM-dd
         // 当前日期
         String date = dateFormat.format(new Date(System.currentTimeMillis()));
-        if (TextUtils.isEmpty(date)||date.length()<6);
+        if (TextUtils.isEmpty(date) || date.length() < 6) ;
         String year = date.substring(0, 4);
         String month = date.substring(4, 6);
-           String result= date.substring(Integer.parseInt( month) >10?4:5, 6);
+        boolean isTwo = Integer.parseInt(month) >= 10;
+        String result = date.substring( isTwo? 4 : 5, 6);
         StringBuilder sb = new StringBuilder();
-        sb.append(result).append("月/").append(year);
+        sb.append(result+(isTwo?" ":"")).append("月/").append(year);
         return sb.toString();
     }
 

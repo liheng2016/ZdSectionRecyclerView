@@ -70,7 +70,7 @@ public class DBApiManager {
     }
 
 
-    public void update() {
+    public synchronized void update() {
         SQLiteDatabase db2 = mySqLiteHelper.getReadableDatabase();
         ContentValues contentValuesu = new ContentValues();
         contentValuesu.put("price", 100);
@@ -80,7 +80,7 @@ public class DBApiManager {
         db2.close();
     }
 
-    public List<DbTestBean> query() {
+    public synchronized List<DbTestBean> query() {
         SQLiteDatabase db3 = mySqLiteHelper.getReadableDatabase();
         String sql = "select * from " + DB_NAME;
        return selectDataCursor(selectDataBySql(db3, sql, null));
@@ -105,7 +105,7 @@ public class DBApiManager {
         return stndNoisesByCid;
     }
 
-    public Cursor selectDataBySql(SQLiteDatabase sqLiteDatabase, String sql, String[] selectArgs) {
+    public synchronized Cursor selectDataBySql(SQLiteDatabase sqLiteDatabase, String sql, String[] selectArgs) {
         Cursor cursor = null;
 
         if (sqLiteDatabase != null) {
