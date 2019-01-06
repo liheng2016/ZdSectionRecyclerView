@@ -1,6 +1,7 @@
 package base;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -154,4 +155,12 @@ public abstract class TestBaseFragment extends Fragment implements OnBackPressed
     protected abstract int getLayoutResId();
 
     protected abstract String getFragmentTitle();
+    /**
+     * 跳转Activity
+     *
+     * @param targetActivity
+     */
+    protected void enterActivity(Class<?> targetActivity) {
+        startActivity(new Intent(mContext, targetActivity));
+    }
 }

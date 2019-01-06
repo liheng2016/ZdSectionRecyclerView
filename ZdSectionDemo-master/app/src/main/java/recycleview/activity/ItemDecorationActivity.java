@@ -1,5 +1,7 @@
 package recycleview.activity;
 
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -8,6 +10,10 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 
+
+import net.OkHttpUtils;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -15,12 +21,17 @@ import java.util.Map;
 
 import base.BaseActivity;
 import base.BaseFragmentActivity;
+import contants.ConfigInfo;
+import contants.Constant;
 import contants.FragmentPage;
 import customview.FloatingStickItemDecoration;
 import entity.ListGrup;
 import entity.UserInfo;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import mvp.view.ListActivity;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 import pullrefresh.XctPtrLayout;
 import pullrefresh.XctRefreshLayout;
 import recycleview.adapter.MainPageItemAdapter;
@@ -48,6 +59,7 @@ import view.niudong.com.demo.TestLeakActivity;
 import view.niudong.com.demo.TestOnClickActivity;
 import view.niudong.com.demo.TestPayActivity;
 import view.niudong.com.demo.TranslucentActivity;
+import view.niudong.com.demo.receiver.MyReceiver;
 
 public class ItemDecorationActivity extends BaseActivity implements MainPageItemAdapter.OnItemClickListener {
     private static final String TAG = "GenerateQrCodeActivity";
@@ -56,6 +68,7 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
     private Map<Integer, String> keys = new HashMap<>();//存放所有key的位置和内容
     private MainPageItemAdapter adapter;
     private RecyclerView rv;
+
     private LinearLayoutManager layoutManager;
     private XctPtrLayout mPullDownView;
     public static final String RECEVICE_DATA = "jnn";
@@ -72,10 +85,8 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
             }
         }
     };
+    private MyReceiver myReceiver;
 
-    public ItemDecorationActivity() {
-        datas = new HashMap<>();
-    }
 
     @Override
     protected void initView() {
@@ -84,13 +95,38 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
         mPullDownView = (XctPtrLayout) findViewById(R.id.pull);
         //禁止下拉刷新头左右滑动
         mPullDownView.disableWhenHorizontalMove(true);
-        Button bt = (Button) findViewById(R.id.bt_click);
-        MyApplication.mContext.getHandler().postDelayed(new Runnable() {
+        MyApplication.getHandler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 ToastUtils.showToast(ItemDecorationActivity.this, "欢迎你，下拉试试！");
             }
         }, 600);
+        OkHttpUtils.getInteance().getHttpUtils("https://www.androidos.net.cn/articles", new Callback() {
+
+            @Override
+            public void onFailure(Call call, final IOException e) {
+                MyApplication.getHandler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ToastUtils.showToast(ItemDecorationActivity.this, e.toString() + "");
+                    }
+                }, 0);
+            }
+
+            @Override
+            public void onResponse(Call call, final Response response) throws IOException {
+                MyApplication.getHandler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ToastUtils.showToast(ItemDecorationActivity.this, response.toString() + "");
+                    }
+                }, 0);
+            }
+        });
+//        主框架
+        myReceiver = new MyReceiver();
+        IntentFilter intentFilter = new IntentFilter(Constant.NOTIFIY_LIST_ITEM);
+        registerReceiver(myReceiver, intentFilter);
     }
 
     @Override
@@ -151,14 +187,7 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
         rv.setHasFixedSize(true);
         rv.setAdapter(adapter);
         adapter.notifyDataSetChanged();
-        int i1 = 2 / 50;
-        int i2 = 2 % 50;
-        int count = 0 / 50;
-        int i = 0 % 50;
-        Log.d(TAG, "2 / 50--" + i1);
-        Log.d(TAG, "2 % 5--" + i2);
-        Log.d(TAG, "0 / 5--" + count);
-        Log.d(TAG, "0 % 5--" + i);
+
     }
 
     private void processTestData(UserInfo userInfo) {
@@ -188,7 +217,7 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
             case "采用自定义getItemViewType方式":
                 enterActivity(InvestorBillMainActivity.class);
                 break;
-            case "RecyclerView嵌套水平RecyclerView无冲突":
+            case "RecyclerView嵌套水平Recycler无冲突":
                 enterActivity(NavigationMainActivity.class);
                 break;
 
@@ -294,6 +323,13 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
             case "手动解析Json":
                 BaseFragmentActivity.startFragment(this, FragmentPage.DATA_JSON_FRAGMENT);
                 break;
+            case "加载更多的RecyclerView":
+                BaseFragmentActivity.startFragment(this, FragmentPage.LOADMOR_RECYLER_FRAGMENT);
+                break;
+            case "ReactNative列表展示":
+                Intent intent = new Intent(Constant.NOTIFIY_LIST_ITEM);
+                this.sendBroadcast(intent);
+                break;
             default:
                 break;
 
@@ -314,6 +350,7 @@ public class ItemDecorationActivity extends BaseActivity implements MainPageItem
     protected void onDestroy() {
         super.onDestroy();
         Bus.getInstance().unregister(RECEVICE_DATA, mMsgSuccess);
+        unregisterReceiver(myReceiver);
         //清空所有WebView的缓存
         //   Map<Integer, WebView> integerWebViewMap = HkStockUtil.getInstance().getmCacheData();
         // if (integerWebViewMap != null && integerWebViewMap.size() > 0) {

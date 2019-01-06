@@ -175,7 +175,7 @@ public class TranslucentActivity extends BaseActivity implements NestedScrollVie
         //WebView 的父布局
         mRootWebView = (LinearLayout) LayoutInflater.from(this).inflate(R.layout.webview, mRecyclerView, false);
         //TODO 做了WebView 预加载处理 （原理是 进入闪屏页开始加载WebView  到这个页面直接取缓存）
-        HkStockUtil.getInstance().loadWebViewData(mRootWebView, 2);
+        HkStockUtil.getInstance().loadWebViewData(mRootWebView, 5);
 
 
     }
@@ -275,14 +275,13 @@ public class TranslucentActivity extends BaseActivity implements NestedScrollVie
 //        //显示列表内容
 //        //点击滚动到顶部   如何在顶部  那么不执行
         //在顶部  处理位置   更严谨-- 小于Tab 索引      那么滑到上次的位置
-        //不在顶
-        //
-        if (!isTopHasTab) {
-            for (int i = 0; i <= 2; i++) {
-                cacheListPostion.put(i, mTabMarginTop);
-            }
-        }
-        sCrollToPostion(mCurrPostion);
+        //TODO 该代码可以实现点击Tab滚动到顶部
+//        if (!isTopHasTab) {
+//            for (int i = 0; i <= 2; i++) {
+//                cacheListPostion.put(i, mTabMarginTop);
+//            }
+//        }
+//        sCrollToPostion(mCurrPostion);
     }
 
     private void sCrollToPostion(int mCurrPostion) {

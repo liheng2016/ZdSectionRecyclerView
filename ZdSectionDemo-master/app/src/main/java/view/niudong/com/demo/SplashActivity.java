@@ -11,11 +11,12 @@ import android.webkit.WebView;
 import android.widget.ImageView;
 
 import base.BaseActivity;
+import contants.ConfigInfo;
 import recycleview.activity.ItemDecorationActivity;
 import utils.HkStockUtil;
 
 public class SplashActivity extends BaseActivity {
-    private static final long DURATION = 2000;
+    private static final long DURATION = 2200;
     private ImageView splashView;
     public String FEIDI_ZIXUN_SIDI_URL = "https://www.21fid.com/external/dyqh/newsFid/news/financing";
     private static final String URL_BASE = "https://github.com/NIUDONG2015";
@@ -39,7 +40,8 @@ public class SplashActivity extends BaseActivity {
 
         HkStockUtil.getInstance().initRegisterWebView(new WebView(this), FEIDI_MAYUN_URL, 3);
         HkStockUtil.getInstance().initRegisterWebView(new WebView(this), FEIDI_MAYUN_URL, 4);
-//   HkStockUtil.getInstance().loadWebView(URL_BASE));
+//
+        HkStockUtil.getInstance().initRegisterWebView(new WebView(this), ConfigInfo.getWebViewUrl(), 5);
         //            否则闪屏2秒后（渐变动画），进入LoginActivity
         ObjectAnimator alpha = ObjectAnimator.ofFloat(splashView, "alpha", 0, 1).setDuration(DURATION);
         alpha.start();
@@ -47,7 +49,7 @@ public class SplashActivity extends BaseActivity {
             @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
-                startActivity(ItemDecorationActivity.class, true, null);
+                startActivity(MainTabActivity.class, true, null);
             }
         });
     }

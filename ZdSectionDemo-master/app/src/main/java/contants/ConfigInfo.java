@@ -33,4 +33,13 @@ public class ConfigInfo {
     public static String getBuglyId() {
         return buglyId;
     }
+
+
+    /**
+     * //WebView 界面URL
+     * webView url
+     */
+    public static String getWebViewUrl() {
+        return  "https://wap.mytour.vip";
+    }
 }

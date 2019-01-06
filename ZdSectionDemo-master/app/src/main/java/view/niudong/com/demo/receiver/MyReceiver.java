@@ -10,10 +10,11 @@ import android.widget.Toast;
 
 /**
  * Created by Administrator on 2017/1/4.view.niudong.com.demo.receiver.MyReceiver
+ * myReceiver   https://www.jianshu.com/p/d105716dc26c
  */
 
 public class MyReceiver extends BroadcastReceiver {
-    private static MyReceiver myReceiver;
+//    private static MyReceiver myReceiver;
     private ConnectivityManager connectivityManager;
 
     @Override
@@ -29,14 +30,14 @@ public class MyReceiver extends BroadcastReceiver {
         }
     }
 
-    static {
-        myReceiver = new MyReceiver();
+//    static {
+//        myReceiver = new MyReceiver();
+//
+//    }
 
-    }
-
-    public static MyReceiver getInstance() {
-        return myReceiver;
-    }
+//    public static MyReceiver getInstance() {
+//        return myReceiver;
+//    }
 
     public void timer() {
         //Handler创建一个延时的调用

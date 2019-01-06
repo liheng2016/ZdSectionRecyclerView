@@ -117,7 +117,7 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
         mRecyclerView.setAdapter(mAdapter);
 
         //TODO 我是头部  我可以加入任何地方
-        mHeadView = LayoutInflater.from(getActivity()).inflate(R.layout.item_hk_headview, mRecyclerView, false);
+        mHeadView = LayoutInflater.from(getActivity()).inflate(R.layout.investor_head_view, mRecyclerView, false);
         //TODO  我是Tab 标题
         mTabTitleView = LayoutInflater.from(getActivity()).inflate(R.layout.item_tab_three_click, mRecyclerView, false);
         //TODO  顶部Tab初始  其实自定义了会简洁 清爽
@@ -306,6 +306,7 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
                 mData.addAll(HkStockUtil.getInstance().getRenGouTimeList());
                 //另一种数据
                 mData.addAll(HkStockUtil.getInstance().getRenGoTimeChildList());
+                mData.addAll(HkStockUtil.getInstance().getRenGouTimeList());
                 currPage = 0;
                 break;
             case ITEM_TWO:
@@ -357,7 +358,7 @@ public class MulitTabFragment extends TestBaseFragment implements View.OnClickLi
 
     @Override
     protected String getFragmentTitle() {
-        return "一个RecyclerView切多Tab";
+        return "明天，遇见最好的自己";
     }
 
 

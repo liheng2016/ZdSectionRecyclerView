@@ -1,40 +1,41 @@
-服务相关
-http://10.10.0.114:8080/nd/mthq.jpg
-//代码托管
-https://gitlab.com/projects/new
-//跨平台flutter
-https://github.com/flutter/flutter
-//学习资料
-https://blog.csdn.net/zuoyueliang/article/details/81475190
-https://github.com/CarGuo/GSYGithubAppFlutter
+做一回程序员，不做个自己的应用好意思么？
+一直被模仿，从未被超越 --------2018.9.20
 
-//RN
-https://github.com/CarGuo/LearnProject
-https://github.com/es6rn/Readme-first
-
-//UUID  微信登陆  同一账户 
-https://blog.csdn.net/u012964796/article/details/48717183?utm_source=blogxgwz9
+密码：
+123456zd
 
 
-https://www.jianshu.com/p/20cfd4f8c4ff
 
-安卓WebView
-https://blog.csdn.net/cxb5241/article/details/50226583
+###2019.1.6
+### 主框架
 
-安卓改变网络状态后通知处理！
-Callback
-网络状态的回调
-https://blog.csdn.net/u011315960/article/details/79006162
+1.0.1新增 ：  
 
-https://blog.csdn.net/Fantistic_baby/article/details/77716553
+1.安卓8.0通知栏适配，处理程序处于前台(栈顶和非栈顶)，后台((栈顶和非栈顶)，跳转不同界面刷新列表；
+2.状态栏处理，主Tab 新增 趋势和我的；
 
-RN 效果Demo
-https://github.com/xiaweizi/QNews_React_Native
+http://git.oschina.net/NiuDong/ZdDemo
 
 
-https://github.com/wix/react-templates安装命令： npm install react-templates -g
 
-RN牛逼项目
-https://mp.weixin.qq.com/s/phfnNAxTHYLvcMclf8CnWw
+
+下期小计划：
+
+1、安卓核心技能优化、
+增加
+2、外网可下载，扫描二维码（三方平台）
+3、植入小广告（后续考虑）
+4、关联导流  （后续考虑）
+5、企业资质申请
+6、跨平台（接入Flutter）
+7、公用的都写成mudle
+8、全局改变主题
+9、上线App 应用市场
+10、Api 聚合数据整合
+11、热修复 
+
+
+
+
 
 

@@ -84,7 +84,7 @@ public class HkStockUtil {
 
     public List<Category> getPopListData() {
         List<Category> result = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 25; i++) {
             Category data = new Category("跨平台flutter" + i);
             result.add(data);
         }
@@ -94,13 +94,31 @@ public class HkStockUtil {
     public List<Category> getPopList2Data() {
 
         List<Category> result = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 30; i++) {
             Category data = new Category("做一个自己的产品" + i);
             result.add(data);
         }
         return result;
     }
+    public List<Category> getPopList3Data() {
 
+        List<Category> result = new ArrayList<>();
+        for (int i = 0; i < 30; i++) {
+            Category data = new Category("专注做好一件事情" + i);
+            result.add(data);
+        }
+        return result;
+    }
+
+    public List<Category> getList4Data() {
+
+        List<Category> result = new ArrayList<>();
+        for (int i = 0; i < 30; i++) {
+            Category data = new Category("跨平台ReactNative" + i);
+            result.add(data);
+        }
+        return result;
+    }
 
     /**
      * 标的证券的更新回调
@@ -244,7 +262,7 @@ public class HkStockUtil {
         ListGrup listGrup = new ListGrup();
         listGrup.titleData = "RecyclerView悬停";
         List<String> mRecyclerData = new ArrayList<>();
-        mRecyclerData.add("采用ItemDecoration悬停");
+//        mRecyclerData.add("采用ItemDecoration悬停");
         mRecyclerData.add("采用自定义布局方式悬停");
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
@@ -252,9 +270,10 @@ public class HkStockUtil {
         listGrup = new ListGrup();
         listGrup.titleData = "RecyclerView多条目布局";
         mRecyclerData = new ArrayList<>();
-        mRecyclerData.add("采用multitype复杂列表");
+//        mRecyclerData.add("加载更多的RecyclerView");
+//        mRecyclerData.add("采用multitype复杂列表");
         mRecyclerData.add("采用自定义getItemViewType方式");
-        mRecyclerData.add("RecyclerView嵌套水平RecyclerView无冲突");
+        mRecyclerData.add("RecyclerView嵌套水平Recycler无冲突");
         mRecyclerData.add("Pop中的RecyclerView");
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
@@ -264,7 +283,7 @@ public class HkStockUtil {
         mRecyclerData = new ArrayList<>();
         mRecyclerData.add("采用FragMentTabHost+子Fragment");
         mRecyclerData.add("采用NavigationBar+子Fragment");
-        mRecyclerData.add("封装List列表管理子Fragment");
+//        mRecyclerData.add("封装List列表管理子Fragment");
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
         //TODO  滑动列表折叠效果实现
@@ -296,12 +315,7 @@ public class HkStockUtil {
         mRecyclerData.add("LazyFragment懒加载+ViewPager");
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
-        listGrup = new ListGrup();
-        listGrup.titleData = "跨平台嵌入RN模块";
-        mRecyclerData = new ArrayList<>();
-        mRecyclerData.add("ReactNative列表展示");
-        listGrup.setmChildStr(mRecyclerData);
-        grupList.add(listGrup);
+
         //TODO 其他相关
         listGrup = new ListGrup();
         listGrup.titleData = "其他相关";
@@ -318,10 +332,15 @@ public class HkStockUtil {
         mRecyclerData.add("Aidl跨进程通讯");
         mRecyclerData.add("BitMap合成图片");
         mRecyclerData.add("手动解析Json");
-
         listGrup.setmChildStr(mRecyclerData);
         grupList.add(listGrup);
-
+        //通知栏
+        listGrup = new ListGrup();
+        listGrup.titleData = "android8.0通知栏调式";
+        mRecyclerData = new ArrayList<>();
+        mRecyclerData.add("点我显示通知栏");
+        listGrup.setmChildStr(mRecyclerData);
+        grupList.add(listGrup);
 
         return grupList;
     }

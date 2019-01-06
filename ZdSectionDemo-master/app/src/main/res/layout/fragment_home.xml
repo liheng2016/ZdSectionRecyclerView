@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <pullrefresh.XctPtrLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:id="@+id/pull"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<TextView
-    android:gravity="center"
-    android:id="@+id/tv_hhe"
-    android:layout_width="match_parent"
-    android:text="首页"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_jump"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xct_space_value_x40"
+            android:background="@color/xn_red"
+            android:text="跳转到Three"
+            android:textColor="@color/xn_white" />
+
+        <TextView
+            android:id="@+id/tv_hhe"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首页">
 
 
-
-</TextView>
+        </TextView>
+    </LinearLayout>
 </pullrefresh.XctPtrLayout>

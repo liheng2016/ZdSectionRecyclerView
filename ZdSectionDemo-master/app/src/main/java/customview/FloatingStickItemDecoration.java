@@ -116,7 +116,7 @@ public class FloatingStickItemDecoration extends RecyclerView.ItemDecoration {
 
         mBackgroundPaint = new Paint();
         mBackgroundPaint.setAntiAlias(true);
-        mBackgroundPaint.setColor(ColorUtils.COLOR_RED_BG);
+        mBackgroundPaint.setColor(ColorUtils.COLOR_TIELE_BG);
     }
 
     @Override

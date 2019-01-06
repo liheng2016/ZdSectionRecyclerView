@@ -6,6 +6,7 @@ import fragment.CustomClockFragment;
 import fragment.CustomViewChiFragment;
 import fragment.CustomViewFragment;
 import fragment.DataJsonFragment;
+import fragment.LoadMoreRecyclerFragment;
 import fragment.MulitTabFragment;
 import fragment.PackageFragment;
 import fragment.PopRecyclerFragment;
@@ -42,6 +43,7 @@ public enum FragmentPage {
     CUSTOM_CLOCK_FRAGMENT(CustomClockFragment.class, "自定义钟表"),
     STOCK_KLINE_FRAGMENT(StockKlineFragment.class, "自定义股票K线"),
     POP_RECYCLER_FRAGMENT(PopRecyclerFragment.class, "Pop中的RecyclerView"),
+    LOADMOR_RECYLER_FRAGMENT(LoadMoreRecyclerFragment.class, "加载更多的RecyclerView"),
     DATA_JSON_FRAGMENT(DataJsonFragment.class, "解析Json");
 
     private String title;

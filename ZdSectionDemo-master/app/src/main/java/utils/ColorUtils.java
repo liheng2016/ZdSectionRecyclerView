@@ -36,6 +36,7 @@ public class ColorUtils {
     public static final int COLOR_HK_7D8187 = Color.parseColor("#7d8187");
     public static final int COLOR_HK_01A5E0 = Color.parseColor("#01a5e0");
     public static final int COLOR_LINE= Color.parseColor("#e3e6eb");
+    public static final int COLOR_TIELE_BG= Color.parseColor("#f23061");
     public static final int COLOR_RED_BG= Color.parseColor("#ffff5454");
 
     /**
